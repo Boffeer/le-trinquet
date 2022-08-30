@@ -1,0 +1,116 @@
+:root {
+  // --tr-enter-jolly: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  // --tr-enter-jolly: all 0.5s cubic-bezier(0.4, 0, 0, 1);
+  --bg-poppa-overlay: rgba(0, 0, 0, 0.8);
+  --c-poppa-closer-hover: #ff3b30;
+  --z-poppa: 1234567890;
+  // opacity 0.5s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.poppa__storage {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-poppa);
+  display: block;
+  width: 100%;
+  height: calc(100 * 1vh);
+  max-height: 1000px;
+  pointer-events: none;
+}
+.poppa__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100 * 1vh);
+  max-height: 1000px;
+  pointer-events: none;
+  background-color: var(--bg-poppa-overlay);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.poppa__overlay._show {
+  pointer-events: initial;
+  opacity: 1;
+}
+
+.poppa__aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.poppa {
+  max-width: 900px;
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border-radius: 2em;
+  transition: all 0.3s ease;
+  transform: scale(0.86);
+}
+._show .poppa {
+  transform: scale(1);
+}
+
+.poppa__closer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.poppa__closer::before,
+.poppa__closer::after {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 10%;
+  content: "";
+  background-color: #fff;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.poppa__closer::before {
+  transform: rotate(45deg);
+}
+.poppa__closer::after {
+  transform: rotate(-45deg);
+}
+.poppa__closer:hover::before,
+.poppa__closer:hover::after {
+  background-color: var(--c-poppa-closer-hover);
+}
+
+/*
+
+  Animations
+
+    transition: opacity .5s cubic-bezier(.4,0,0,1),-webkit-transform .5s cubic-bezier(.4,0,0,1)!important;
+    transition: transform .5s cubic-bezier(.4,0,0,1),opacity .5s cubic-bezier(.4,0,0,1)!important;
+
+    transition: transform .5s cubic-bezier(.4,0,0,1),opacity .5s cubic-bezier(.4,0,0,1),-webkit-transform .5s cubic-bezier(.4,0,0,1)!important;
+
+    transform: scale(.86);
+    opacity: 0;
+*/
+
+// transition: opacity .5s cubic-bezier(.5,0,.5,1)
+
+// transition: opacity .7s cubic-bezier(.5,0,.5,1)!important;
+.poppa__overlay._enter--jolly {
+  // transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1),
+  // opacity 0.5s cubic-bezier(0.4, 0, 0, 1);
+}

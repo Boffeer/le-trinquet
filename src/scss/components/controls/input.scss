@@ -1,0 +1,72 @@
+.input {
+  --border-color: #dfdfdf;
+  --border-radius: 5px;
+  --text-color: var(--c-text-regular);
+  --fz: 16px;
+  --lh: 1.45;
+  --padding: 0.893em 1.33em;
+  --label-color: var(--c-text-grey-2);
+  --label-top: 16px;
+  --label-left: 12px;
+  --label-fz: var(--fz);
+  --label-lh: var(--lh);
+  --message-color: var(--c-text);
+  --message-transform: scale(1, 0);
+  position: relative;
+  width: 100%;
+}
+.input--active {
+  --border-color: var(--c-text-grey-2);
+  --label-top: -9px;
+  --lebel-left: 12px;
+  --label-fz: calc(var(--label-fz) - 5);
+}
+
+.input__field {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: var(--padding);
+  font-size: var(--fz);
+  line-height: var(--lh);
+  color: var(--text-color);
+  background-color: var(--bg-element);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+.input__field::placeholder {
+  color: var(--text-color);
+}
+
+.input__label {
+  position: absolute;
+  top: var(--label-top);
+  left: var(--label-left);
+  z-index: 3;
+  display: inline-block;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: var(--label-color);
+  pointer-events: none;
+  background-color: var(--bg-element);
+  transition: all 0.3s ease;
+}
+
+.input__message {
+  z-index: 1;
+  display: block;
+  font-size: var(--fz-tag);
+  line-height: var(--lh-tag);
+  color: var(--message-color);
+  transition: all 0.3s ease;
+  transform: var(--message-transform);
+  transform-origin: top;
+}
+
+.input--invalid {
+  --label-color: var(--c-error);
+  --message-transform: scale(1);
+  --message-color: var(--c-error);
+  --border-color: var(--c-error);
+}

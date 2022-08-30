@@ -1,0 +1,67 @@
+// ================ Responsive Start ================
+$min-width: 320px;
+$max-width: 1920px;
+$max-width-container: 1200;
+$container-padding: 48;
+$container-width: $max-width-container + $container-padding;
+
+$laptop-l: 1500px;
+$laptop: 1100px;
+$tablet: 800px;
+$mobile-l: 450px;
+$mobile-m: 390px;
+$mobile-s: 330px;
+$hide-menu: $tablet;
+// ================ Responsive End ================
+
+// ================ Colors Start ================
+// Текст
+$text-primary: var(--c-text-regular);
+$text-second: var(--c-text-secondary);
+$text-label: var(--c-text-label);
+$accent: #ffcd6d;
+$light: #fff;
+
+// Задний фон разделов
+// $frame-dark: #080A0A;
+// $frame-light: #0E1010;
+
+// Обводка
+$border-line: var(--c-border);
+
+// Радиусы
+$radius-s: var(--radius-s);
+$radius-l: var(--radius-l);
+
+// Текстовые поля
+$input-placeholder: var(--c-input-placeholder);
+
+// Уведомления
+$error: var(--c-error);
+// ================ Colors End ================
+:root {
+  --c-text-regular: #333;
+  --c-text-secondary: brig-color($text-primary, 0.7);
+  --c-text-label: #bdbdbd;
+  --c-text-on: #fff;
+  --c-input-placeholder: brig-color(#000, 0.3);
+
+  --c-accent: $accent;
+  --c-error: #ff3b30;
+
+  --c-border: #cecece;
+  --radius-s: 4px;
+  --radius-l: 30px;
+
+  --tr: 0.3s;
+  --tr-regular: all var(--tr) ease;
+
+  --container-padding: #{math.div($container-padding, 2) + "px"};
+
+  --ff-regular: sans-serif;
+}
+
+// ================ Other Start ================
+$ff-main: var(--ff-regular);
+$tr: var(--tr);
+// ================ Other End ================
