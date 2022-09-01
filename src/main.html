@@ -11,81 +11,9 @@
     <div class="wrapper">
       @@include('tpls/header.html',{})
 
-      <main class="main">
-        <div class="timer__wrapper hero__timer">
-          <div class="timer b_timer">
-            <div class="timer__left timer__section">
-              <span class="timer__digit">7</span>
-              <span class="timer__digit">1</span>
-            </div>
-            :
-            <div class="timer__center timer__section">
-              <span class="timer__digit">5</span>
-              <span class="timer__digit">9</span>
-            </div>
-            :
-            <div class="timer__right timer__section">
-              <span class="timer__digit">5</span>
-              <span class="timer__digit">9</span>
-            </div>
-          </div>
-          <picture class="picture timer__pic">
-            <img src="" alt="Timer" class="timer__img" />
-          </picture>
-        </div>
-      </main>
+      <main class="main"></main>
 
-      <div class="content">
-        <form action="">
-          <h2>Заголовок формы</h2>
-          <label class="input input--name">
-            <input
-              class="input__field"
-              name="user_name"
-              type="text"
-              placeholder="Имя"
-              data-value-missing="Заполните имя"
-              data-value-invalid="Что-то не так с введенным именем"
-              autocomplete="name"
-            />
-            <span class="input__message">Сообщение</span>
-          </label>
-          <label class="input input--tel">
-            <input
-              class="input__field"
-              name="user_tel"
-              type="tel"
-              placeholder="Телефон"
-              maxlength="25"
-              minlength="10"
-              data-value-missing="Напишите телефон"
-              data-value-invalid="Проверьте корректность телефона"
-              autocomplete="tel"
-            />
-            <span class="input__message">Ошибка</span>
-          </label>
-          <label class="input input--email">
-            <input
-              class="input__field"
-              name="user_email"
-              type="email"
-              placeholder="Email"
-              autocorrect="off"
-              autocomplete="email"
-              data-value-missing="Напишите имейл"
-              data-value-invalid="Проверьте корректность имейла"
-            />
-            <span class="input__message">Ошибка</span>
-          </label>
-          <button class="button button--primary" type="submit">
-            Отправить!
-          </button>
-        </form>
-        <button class="button button--primary" data-poppa-open="popich">
-          Открыть
-        </button>
-        <button>еще</button>
-      </div>
+      <div class="content">@@include('tpls/controls.html',{})</div>
 
       <div id="popich" class="poppa">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
