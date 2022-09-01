@@ -12,6 +12,7 @@ $mobile-l: 450px;
 $mobile-m: 390px;
 $mobile-s: 330px;
 $hide-menu: $tablet;
+$minHover: $laptop;
 // ================ Responsive End ================
 
 // ================ Colors Start ================
@@ -19,7 +20,7 @@ $hide-menu: $tablet;
 $text-primary: var(--c-text-regular);
 $text-second: var(--c-text-secondary);
 $text-label: var(--c-text-label);
-$accent: #ffcd6d;
+$accent: #b24d2b;
 $light: #fff;
 
 // Задний фон разделов
@@ -41,12 +42,13 @@ $error: var(--c-error);
 // ================ Colors End ================
 :root {
   --c-text-regular: #333;
-  --c-text-secondary: brig-color($text-primary, 0.7);
+  --c-text-secondary: #5b5b5b;
+  --c-button-secondary: #5b5b5b;
   --c-text-label: #bdbdbd;
   --c-text-on: #fff;
   --c-input-placeholder: brig-color(#000, 0.3);
 
-  --c-accent: $accent;
+  --c-accent: #b24d2b;
   --c-error: #ff3b30;
 
   --bg-element: #fff;
@@ -61,6 +63,9 @@ $error: var(--c-error);
   --container-padding: #{math.div($container-padding, 2) + "px"};
 
   --ff-regular: "Ubuntu", sans-serif;
+
+  --fz-button: 18px;
+  --lh-button: 126.5%;
 }
 
 // ================ Other Start ================

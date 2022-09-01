@@ -83,3 +83,8 @@
   --message-color: var(--c-error);
   --border-color: var(--c-error);
 }
+
+.input--textarea .input__field {
+  padding-left: 42px;
+  resize: none;
+}
