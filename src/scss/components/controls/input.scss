@@ -1,10 +1,10 @@
 .input {
   --border-color: #dfdfdf;
-  --border-radius: 5px;
+  --border-radius: 0px;
   --text-color: var(--c-text-regular);
-  --fz: 16px;
-  --lh: 1.45;
-  --padding: 0.893em 1.33em;
+  --fz: 18px;
+  --lh: 1.4;
+  --padding: 22px 22px 22px 68px;
   --label-color: var(--c-text-grey-2);
   --label-top: 16px;
   --label-left: 12px;
@@ -13,7 +13,9 @@
   --message-color: var(--c-text);
   --message-transform: scale(1, 0);
   position: relative;
+  display: block;
   width: 100%;
+  font-family: var(--ff-regular);
 }
 .input--active {
   --border-color: var(--c-text-grey-2);
@@ -33,10 +35,21 @@
   background-color: var(--bg-element);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
+  box-shadow: inset 0px 0px 40px rgba(188, 188, 188, 0.25);
   transition: all 0.3s ease;
 }
 .input__field::placeholder {
-  color: var(--text-color);
+  color: rgba(0, 0, 0, 0.19);
+}
+
+.input__icon {
+  position: absolute;
+  top: 27px;
+  left: 38px;
+  z-index: 3;
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 .input__label {

@@ -1,12 +1,14 @@
 /* stylelint-disable scss/operator-no-newline-after */
 // ШРИФТЫ
-@mixin font($fname, $fstyle, $fweight, $furl_woff2) {
+@mixin font($fname, $fstyle, $fweight, $furl) {
   @font-face {
     font-family: $fname;
     font-style: $fstyle;
     font-weight: $fweight;
     font-stretch: 100%;
-    src: url($furl_woff2) format("woff2");
+    src: url("#{$furl}.woff2") format("woff2"),
+      url("#{$furl}.woff") format("woff");
+
     font-display: swap;
   }
 }

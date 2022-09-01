@@ -49,6 +49,8 @@ $error: var(--c-error);
   --c-accent: $accent;
   --c-error: #ff3b30;
 
+  --bg-element: #fff;
+
   --c-border: #cecece;
   --radius-s: 4px;
   --radius-l: 30px;
@@ -58,7 +60,7 @@ $error: var(--c-error);
 
   --container-padding: #{math.div($container-padding, 2) + "px"};
 
-  --ff-regular: sans-serif;
+  --ff-regular: "Ubuntu", sans-serif;
 }
 
 // ================ Other Start ================
