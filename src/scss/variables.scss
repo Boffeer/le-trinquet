@@ -49,9 +49,19 @@ $error: var(--c-error);
   --c-input-placeholder: brig-color(#000, 0.3);
 
   --c-accent: #b24d2b;
+  --c-accent-light: #cc886a;
   --c-error: #ff3b30;
 
   --bg-element: #fff;
+  --bg-app: #0e1317;
+  --bg-app-secondary: #212425;
+
+  --bg-dropdown: #384043;
+  --bg-dropdown-list: #4e5557;
+
+  --bg-poppa: #171b1f;
+  --radius-poppa: 10px;
+  --overlay-poppa: rgba(0, 0, 0, 0.8);
 
   --c-border: #cecece;
   --radius-s: 4px;
@@ -63,6 +73,7 @@ $error: var(--c-error);
   --container-padding: #{math.div($container-padding, 2) + "px"};
 
   --ff-regular: "Ubuntu", sans-serif;
+  --ff-title: "Poiret One", sans-serif;
 
   --fz-button: 18px;
   --lh-button: 126.5%;

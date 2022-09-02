@@ -12,6 +12,7 @@
   --label-lh: var(--lh);
   --message-color: var(--c-text);
   --message-transform: scale(1, 0);
+  --message-offset: -1.2em;
   position: relative;
   display: block;
   width: 100%;
@@ -69,6 +70,7 @@
 .input__message {
   z-index: 1;
   display: block;
+  margin-top: var(--message-offset);
   font-size: var(--fz-tag);
   line-height: var(--lh-tag);
   color: var(--message-color);
@@ -81,6 +83,7 @@
   --label-color: var(--c-error);
   --message-transform: scale(1);
   --message-color: var(--c-error);
+  --message-offset: 0;
   --border-color: var(--c-error);
 }
 

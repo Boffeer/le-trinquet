@@ -4,6 +4,11 @@ import { removeAllClasses, bodyLock } from "./utils/functions.js";
 import DismalModules, { acc } from "./utils/modules.js";
 import "./b_timer.js";
 import "./poppa.js";
+import "./libs/custom-select.min.js";
+
+if (document.querySelector(".input--dropdown")) {
+  customSelect(".input--dropdown .input__select");
+}
 
 // Аккордеон
 // const accordions = new DismalModules.Accordions()

@@ -1,56 +1,7 @@
 <form action="">
   <h2>Форма</h2>
-  <label class="input input--name">
-    <input
-      class="input__field"
-      name="user_name"
-      type="text"
-      placeholder="Nom"
-      data-value-missing="Заполните имя"
-      data-value-invalid="Что-то не так с введенным именем"
-      autocomplete="name"
-    />
-    <svg class="input__icon">
-      <use xlink:href="./img/icons/form-user.svg#user"></use>
-    </svg>
-    <span class="input__message">Ошибка</span>
-  </label>
-  <label class="input input--email">
-    <input
-      class="input__field"
-      name="user_email"
-      type="email"
-      placeholder="E-mail"
-      autocorrect="off"
-      autocomplete="email"
-      data-value-missing="Напишите имейл"
-      data-value-invalid="Проверьте корректность имейла"
-    />
-    <svg class="input__icon">
-      <use xlink:href="./img/icons/form-email.svg#email"></use>
-    </svg>
-    <span class="input__message">Ошибка</span>
-  </label>
-  <label class="input input--tel">
-    <input
-      class="input__field"
-      name="user_tel"
-      type="tel"
-      placeholder="Objet"
-      maxlength="25"
-      minlength="10"
-      data-value-missing="Напишите телефон"
-      data-value-invalid="Проверьте корректность телефона"
-      autocomplete="tel"
-    />
-    <svg class="input__icon">
-      <use xlink:href="./img/icons/form-tel.svg#tel"></use>
-    </svg>
-    <span class="input__message">Ошибка</span>
-  </label>
-  <label class="input input--textarea">
-    <textarea class="input__field" placeholder="Votre Message"></textarea>
-  </label>
+  @@include('inputs/name.html', {}) @@include('inputs/tel.html', {})
+  @@include('inputs/email.html', {})
   <button class="button button--primary" type="submit">
     Envoyer le message
   </button>
@@ -58,3 +9,13 @@
     Envoyer le message
   </button>
 </form>
+
+@@include('socials.html',{})
+
+<label for="" class="input input--dropdown">
+  <select name="" id="" class="input__select">
+    <option value="fr">Fr</option>
+    <option value="es">Es</option>
+    <option value="ru">Ru</option>
+  </select>
+</label>

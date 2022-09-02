@@ -15,6 +15,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  cursor: pointer;
   border: 1px solid var(--button-color);
   transition: all 0.3s ease;
 }
@@ -193,33 +194,3 @@
     --button-color: var(--c-accent);
   }
 }
-
-/*
-
-    @link
-
-*/
-
-/* stylelint-disable */
-.link {
-  --icon-color: var(--c-accent);
-  color: var(--c-accent);
-  transition: all var(--t) ease-in-out;
-  padding: 0;
-  justify-content: flex-start;
-}
-.link .button__text {
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
-  width: auto;
-}
-.link:hover .button__text {
-  @media (min-width: $minHover) {
-    // --icon-color: var(--c-accent--dark);
-    border-bottom: 1px solid var(--icon-color);
-  }
-}
-.link:active {
-  opacity: 0.6;
-}
-/* stylelint-enable */
