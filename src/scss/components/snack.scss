@@ -2,7 +2,28 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 101;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #656666;
   background: rgba(33, 33, 33, 0.8);
   backdrop-filter: blur(14px);
+}
+
+.snack__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  align-items: center;
+  justify-content: space-between;
+}
+.snack__hl {
+  color: var(--c-text-on);
+}
+
+.snack__button {
+  min-width: 172px;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  font-size: 15px;
 }

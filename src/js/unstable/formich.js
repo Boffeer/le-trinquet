@@ -184,8 +184,5 @@ function closeDropdowns() {
 }
 
 initInputs(inputs);
-if (document.querySelector(".input--dropdown")) {
-  customSelect(".input--dropdown .input__select");
-}
 
 // #endregion input-labels
