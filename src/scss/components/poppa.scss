@@ -124,6 +124,8 @@
 */
 
 .poppa {
+  width: 100%;
+  max-width: 300px;
   padding-top: 24px;
   padding-right: 18px;
   padding-bottom: 37px;
@@ -131,6 +133,9 @@
   color: var(--c-text-on);
   background: var(--bg-poppa);
   border-radius: var(--radius-poppa);
+  @media (min-width: 1100px) {
+    max-width: 500px;
+  }
 }
 .poppa--overlay {
   background: var(--bg-poppa-overlay);

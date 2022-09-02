@@ -24,6 +24,13 @@
   --lebel-left: 12px;
   --label-fz: calc(var(--label-fz) - 5);
 }
+.input--invalid {
+  --label-color: var(--c-error);
+  --message-transform: scale(1);
+  --message-color: var(--c-error);
+  --message-offset: 5px;
+  --border-color: var(--c-error);
+}
 
 .input__field {
   position: relative;
@@ -70,6 +77,7 @@
 .input__message {
   z-index: 1;
   display: block;
+  min-height: 1.2em;
   margin-top: var(--message-offset);
   font-size: var(--fz-tag);
   line-height: var(--lh-tag);
@@ -77,14 +85,6 @@
   transition: all 0.3s ease;
   transform: var(--message-transform);
   transform-origin: top;
-}
-
-.input--invalid {
-  --label-color: var(--c-error);
-  --message-transform: scale(1);
-  --message-color: var(--c-error);
-  --message-offset: 0;
-  --border-color: var(--c-error);
 }
 
 .input--textarea .input__field {

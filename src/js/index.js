@@ -1,10 +1,11 @@
 "use strict";
 
-import { removeAllClasses, bodyLock } from "./utils/functions.js";
-import DismalModules, { acc } from "./utils/modules.js";
-import "./b_timer.js";
+// import { removeAllClasses, bodyLock } from "./utils/functions.js";
+// import DismalModules, { acc } from "./utils/modules.js";
+// import "./b_timer.js";
 import "./poppa.js";
 import "./libs/custom-select.min.js";
+import "./unstable/formich.js";
 
 if (document.querySelector(".input--dropdown")) {
   customSelect(".input--dropdown .input__select");
@@ -33,7 +34,6 @@ if (document.querySelector(".input--dropdown")) {
 
 // Только цифры и точка в инпутах
 // DismalModules.onlyDigit()
-
 function s() {
   var s = {};
   onkeydown = onkeyup = function (t) {
@@ -61,3 +61,49 @@ function s() {
   };
 }
 s();
+
+// #region cookies
+
+let cookiesPop = true;
+if (!localStorage.getItem("cookies")) {
+  localStorage.setItem("cookies", "true");
+} else if (localStorage.getItem("cookies") == "false") {
+  cookiesPop = false;
+}
+
+checkCookies(cookiesPop);
+const cookiesButton = document.querySelector("#snack-cookies .snack__button");
+cookiesButton.addEventListener("click", () => {
+  cookiesPop = false;
+  checkCookies(cookiesPop);
+  localStorage.setItem("cookies", "false");
+});
+
+function checkCookies(cookiesPop) {
+  const cookiesSnack = document.querySelector("#snack-cookies");
+  if (!cookiesPop) {
+    cookiesSnack.classList.remove("_show");
+    setTimeout(() => {
+      cookiesSnack.remove();
+    }, 2000);
+  } else {
+    cookiesSnack.classList.add("_show");
+  }
+}
+// #endregion cookies
+
+// function normalizeMenuMobileHeight() {
+//   if (window.innerWidth < 1200) {
+//     document.querySelector(".menu").style.height = `${
+//       window.outerHeight + 110
+//     }px`;
+//   } else {
+//     document.querySelector(".menu").style.height = "calc(100 * 1vh)";
+//   }
+// }
+// if (headerMenu) {
+//   window.addEventListener("resize", () => {
+//     normalizeMenuMobileHeight();
+//   });
+//   normalizeMenuMobileHeight();
+// }

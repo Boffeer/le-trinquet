@@ -1,5 +1,6 @@
 .form {
   --form-gtc: 1fr;
+  --form-auto-rows: fit-content;
   --form-display: grid;
   --form-column-gap: 14px;
   --form-row-gap: 14px;
@@ -7,6 +8,7 @@
 .form__inner {
   display: var(--form-display);
   grid-template-columns: var(--form-gtc);
+  grid-auto-rows: var(--form-auto-rows);
   row-gap: var(--form-row-gap);
   column-gap: var(--form-column-gap);
 }
