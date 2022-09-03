@@ -1,9 +1,13 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
 @use "sass:math";
 
+// Библиотеки
+@import "./libs/swiper";
+// @import "./libs/lightgallery";
+@import "./libs/custom-select";
+
 @import "./variables";
 @import "./mixins";
-@import "./components";
 
 // Шрифты
 @include font("Ubuntu", normal, 300, "../resources/fonts/ubuntu/Ubuntu-Light");
@@ -81,10 +85,11 @@ body {
   }
 }
 
-// Библиотеки
-// @import "./libs/swiper";
-// @import "./libs/lightgallery";
-@import "./libs/custom-select";
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 // Базовые стили, шаблоны, заготовки
 @import "./base";
@@ -93,7 +98,7 @@ body {
 @import "./common";
 
 // Компоненты
-// @import "./components";
+@import "./components";
 
 // Карточки
 // @import "./components/cards/";

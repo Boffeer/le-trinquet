@@ -6,10 +6,25 @@
 import "./poppa.js";
 import "./libs/custom-select.min.js";
 import "./unstable/formich.js";
+import Swiper, { Navigation } from "swiper";
 
 if (document.querySelector(".input--dropdown")) {
   customSelect(".input--dropdown .input__select");
 }
+
+let carouselBg = new Swiper(".carousel-bg", {
+  modules: [Navigation],
+  slidesPerView: 4,
+  grabCursor: true,
+  loop: true,
+  navigation: {
+    nextEl: ".carousel-bg__button-next",
+    prevEl: ".carousel-bg__button-prev",
+  },
+});
+carouselBg.on("slideChange", () => {
+  console.log(carouselBg.activeIndex);
+});
 
 // Аккордеон
 // const accordions = new DismalModules.Accordions()

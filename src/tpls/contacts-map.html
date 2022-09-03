@@ -7,7 +7,7 @@
       <p class="contacts__desc section-desc">
         Contactez-nous via nos réseaux ou directement par téléphone ou mail
       </p>
-      <div class="contacts__links">
+      <div class="contacts__links flex">
         @@include("./socials.html", {"instagram": "instagram-accent",
         "facebook": "facebook-accent"})
         <div class="hints">
@@ -18,6 +18,14 @@
             <span class="hints__item-text">05 58 70 91 54</span>
           </a>
         </div>
+      </div>
+      <div class="contacts__buttons">
+        <button class="button button--primary contacts__button-table">
+          Réserver une table
+        </button>
+        <button class="button button--primary contacts__button-ball">
+          Réserver une partie
+        </button>
       </div>
     </div>
     <div class="contacts__map">

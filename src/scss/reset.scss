@@ -39,6 +39,9 @@ textarea {
   font-family: inherit;
   color: inherit;
 }
+button:active {
+  outline: none;
+}
 
 // input::-ms-clear {
 //     display: none;
