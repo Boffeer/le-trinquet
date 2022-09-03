@@ -1,0 +1,28 @@
+.header {
+  padding-top: 25px;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.header__container--mobile {
+  display: none;
+  @media (max-width: $laptop) {
+    display: flex;
+  }
+}
+.header__container--desktop {
+  display: none;
+  @media (min-width: $laptop) {
+    display: flex;
+  }
+}
+
+.header__nav {
+  display: flex;
+  width: 100%;
+  margin-top: 35px;
+}

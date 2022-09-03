@@ -1,0 +1,26 @@
+.hints {
+  display: flex;
+}
+
+.hints__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 20px;
+}
+.hints__item:last-child {
+  margin-right: 0;
+}
+
+.hints__item-icon {
+  display: block;
+  --size: 35px;
+  width: var(--size);
+  min-width: var(--size);
+  height: var(--size);
+  margin-right: 16px;
+}
+
+.hints__item-text {
+  padding-top: 7px;
+}
