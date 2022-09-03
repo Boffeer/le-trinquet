@@ -1,0 +1,25 @@
+.table-bullets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #434445;
+}
+
+.table-bullets__bullet {
+  min-height: 220px;
+  padding: 35px 45px;
+  border: 1px solid #434445;
+}
+
+.table-bullets__bullet-icon {
+  --size: 45px;
+  width: var(--size);
+  height: var(--size);
+  margin-bottom: 21px;
+}
+
+.table-bullets__bullet-text {
+  font-size: 20px;
+  line-height: 150%;
+  color: #f7f7f7;
+  letter-spacing: 0.1em;
+}

@@ -11,7 +11,236 @@
     <div class="wrapper">
       @@include('tpls/header.html',{})
 
-      <main class="main"></main>
+      <main class="main">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__offer">
+              <div class="hero__title">
+                Une cuisine franche et gourmande, du plats au tapas, venez vous
+                régaler au bistro du trinquet
+              </div>
+              <div class="flex flex--buttons">
+                <button class="hero__button-table button button--primary">
+                  Réserver une table
+                </button>
+                <button class="hero__button-sport button button--secondary">
+                  Réserver une partie
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper carousel-bg">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source
+                    srcset="./img/main/carousel/main-carousel-1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="carousel-bg__pic--img"
+                    src="./img/main/carousel/main-carousel-1.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture class="carousel-bg__pic">
+                  <source
+                    srcset="./img/main/carousel/main-carousel-2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="carousel-bg__pic--img"
+                    src="./img/main/carousel/main-carousel-2.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture class="carousel-bg__pic">
+                  <source
+                    srcset="./img/main/carousel/main-carousel-3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="carousel-bg__pic--img"
+                    src="./img/main/carousel/main-carousel-3.jpg"
+                    alt=""
+                  />
+                </picture>
+                <picture class="carousel-bg__pic">
+                  <source
+                    srcset="./img/main/carousel/main-carousel-4.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="carousel-bg__pic--img"
+                    src="./img/main/carousel/main-carousel-4.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="carousel-bg__buttons">
+              <div
+                class="swiper-button-prev carousel-bg__button-prev slider__button slider__button-prev"
+              ></div>
+              <div
+                class="swiper-button-next carousel-bg__button-next slider__button slider__button-next"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container about__container">
+            <div class="running-string about__running-string">
+              LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET ·
+              PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE ·
+              BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS
+              · BAR A VIN ·
+            </div>
+            <picture class="about__pic">
+              <source srcset="./img/about/bullets.webp" type="image/webp" />
+              <img
+                class="about__pic-img"
+                src="./img/about/bullets.jpg"
+                alt="png"
+              />
+            </picture>
+            <div class="about__table-bullets table-bullets">
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/about/products.svg#products"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">Produits frais locaux</p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/about/ball.svg#ball"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Jouer à la pelote <br />
+                  avec des amis
+                </p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/about/menu.svg#menu"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Un menu, des suggestions, <br />
+                  des tapas &amp; pintxos
+                </p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/about/inventory.svg#inventory"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Retransmission des plus grandes&nbsp;compétitions sportives
+                  sur&nbsp;grand écran
+                </p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/about/golf.svg#golf"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Deux aires de jeu : <br />
+                  Le trinquet et le fronton
+                </p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/about/calendar.svg#calendar"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Des animations sportives&nbsp;et culturelles toute l’année
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sport">
+          <picture class="sport__pic sport__pic-aside">
+            <source srcset="./img/ball/ball-left.webp" type="image/webp" />
+            <img class="sport__img" src="./img/ball/ball-left.jpg" alt="" />
+          </picture>
+          <div class="container sport__container">
+            <div class="sport__offer">
+              <h2 class="sport__title section-title">
+                Lejeu de balle le plus rapide du monde
+              </h2>
+              <p class="sport__desc">
+                La pelote basque et un sport de balle populaire, historique et
+                traditionnel. Véritable patrimoine du Pays Basque, elle se
+                pratique partout dans le sud-ouest, au niveau national et dans
+                de nombreux pays du monde. Ses nombreuses disciplines et
+                installations toutes aussi différentes les unes des autres en
+                font un sport unique!
+              </p>
+              <p class="sport__desc">
+                Venez assister à des parties de pelote et pourquoi pas s’y
+                initier!
+              </p>
+            </div>
+          </div>
+          <picture class="sport__pic sport__pic-main">
+            <source srcset="./img/ball/ball-right.webp" type="image/webp" />
+            <img class="sport__img" src="./img/ball/ball-right.jpg" alt="" />
+          </picture>
+        </section>
+
+        <section class="events">
+          <div class="container events__container">
+            <h2 class="section-title text-centered events__title">
+              Événements
+            </h2>
+            <div class="swiper carousel events__carousel">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide carousel__slide">
+                  @@include('./tpls/cards/card.html',{})
+                </div>
+                <div class="swiper-slide carousel__slide">
+                  @@include('./tpls/cards/card.html',{})
+                </div>
+                <div class="swiper-slide carousel__slide">
+                  @@include('./tpls/cards/card.html',{})
+                </div>
+                <div class="swiper-slide carousel__slide">
+                  @@include('./tpls/cards/card.html',{})
+                </div>
+              </div>
+              <div class="carousel__buttons">
+                <div
+                  class="swiper-button-prev carousel__button-prev slider__button slider__button-prev"
+                ></div>
+                <div
+                  class="swiper-button-next carousel__button-next slider__button slider__button-next"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="container reviews__container">
+            <h2 class="section-title text--centered">Les avis</h2>
+            <div class="gtc-2">
+              @@include('./tpls/cards/review.html', {})
+              @@include('./tpls/cards/review.html', {})
+              @@include('./tpls/cards/review.html', {})
+              @@include('./tpls/cards/review.html', {})
+            </div>
+            <div class="flex flex--buttons flex--centered">
+              <button class="button button--secondary reviews__button">
+                Montrer plus
+              </button>
+            </div>
+          </div>
+        </section>
+
+        @@include('./tpls/contacts-map.html', {})
+      </main>
 
       <div class="content">@@include('tpls/controls.html',{})</div>
 

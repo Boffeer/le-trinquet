@@ -1,1 +1,38 @@
-<header class="header"></header>
+<header class="header">
+  <div class="container header__container header__container--mobile">
+    <a href="#" class="branding header__branding">
+      <div class="branding__name">Le Trinquet</div>
+      <span class="branding__slogan"
+        >Un certain art de vivre: Jouer, Manger, Se retrouver
+      </span>
+    </a>
+    @@include("./socials.html", {"instagram": "instagram", "facebook":
+    "facebook"})
+    <button class="burger">
+      <span class="burger__line"></span><span class="burger__line"></span
+      ><span class="burger__line"></span>
+    </button>
+  </div>
+  <div class="container header__container header__container--desktop">
+    <a href="#" class="branding header__branding">
+      <div class="branding__name">Le Trinquet</div>
+      <span class="branding__slogan"
+        >Un certain art de vivre: Jouer, Manger, Se retrouver
+      </span>
+    </a>
+    @@include("./socials.html", {"instagram": "instagram", "facebook":
+    "facebook"}) @@include("./hints.html", {})
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Page Principale</a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Restaurant</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Pelote</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Événements</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Boutique</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,27 @@
+<section class="contacts">
+  <div class="container contacts__container">
+    <div class="contacts__info">
+      <h2 class="contacts__title section-title">
+        Le Trinquet, le lieu de vie de Soorts-Hossegor
+      </h2>
+      <p class="contacts__desc section-desc">
+        Contactez-nous via nos réseaux ou directement par téléphone ou mail
+      </p>
+      <div class="contacts__links">
+        @@include("./socials.html", {"instagram": "instagram-accent",
+        "facebook": "facebook-accent"})
+        <div class="hints">
+          <a href="#" class="hints__item hints__item--tel">
+            <svg class="hints__item-icon">
+              <use xlink:href="./img/icons/tel.svg#tel"></use>
+            </svg>
+            <span class="hints__item-text">05 58 70 91 54</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contacts__map">
+      <!-- <iframe src="" frameborder="0"></iframe> -->
+    </div>
+  </div>
+</section>

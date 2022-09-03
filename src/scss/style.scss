@@ -29,7 +29,8 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
-  color: $text-primary;
+  color: var(--c-text-on);
+  background-color: var(--bg-app-light);
 
   ._lock & {
     overflow: hidden;
