@@ -12,6 +12,7 @@ if (document.querySelector(".input--dropdown")) {
   customSelect(".input--dropdown .input__select");
 }
 
+// #region carousels
 let carouselBg = new Swiper(".carousel-bg", {
   modules: [Navigation, Autoplay],
   slidesPerView: 4,
@@ -26,7 +27,15 @@ let carouselBg = new Swiper(".carousel-bg", {
   },
 });
 carouselBg.on("slideChange", () => {
-  console.log(carouselBg.activeIndex);
+  const totalSlides = [...carouselBg.el.querySelectorAll(".swiper-slide")];
+  const currentSlide = totalSlides[carouselBg.activeIndex + 2];
+  totalSlides.forEach((slide) => {
+    if (slide == currentSlide) {
+      slide.classList.add("carousel-bg__slide--active");
+    } else {
+      slide.classList.remove("carousel-bg__slide--active");
+    }
+  });
 });
 
 let carousel = new Swiper(".carousel", {
@@ -40,6 +49,7 @@ let carousel = new Swiper(".carousel", {
     prevEl: ".carousel__button-prev",
   },
 });
+// #endredion carousels
 
 // Аккордеон
 // const accordions = new DismalModules.Accordions()

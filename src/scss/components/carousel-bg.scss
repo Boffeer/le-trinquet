@@ -12,6 +12,13 @@
   height: 100%;
 }
 
+.carousel-bg__slide {
+  opacity: 0.1;
+  transition: all 0.3s ease;
+}
+.carousel-bg__slide--active {
+  opacity: 1;
+}
 .carousel-bg__pic {
   display: block;
   width: 100%;
