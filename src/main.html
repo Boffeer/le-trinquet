@@ -136,12 +136,12 @@
                 </picture>
               </div>
             </div>
-            <div class="carousel-bg__buttons">
+            <div class="carousel-bg__buttons carousel-buttons">
               <div
-                class="swiper-button-prev carousel-bg__button-prev slider__button slider__button-prev"
+                class="swiper-button-prev carousel-bg__button-prev carousel-button carousel-prev"
               ></div>
               <div
-                class="swiper-button-next carousel-bg__button-next slider__button slider__button-next"
+                class="swiper-button-next carousel-bg__button-next carousel-button carousel-next"
               ></div>
             </div>
           </div>
@@ -234,7 +234,7 @@
           <div class="container sport__container">
             <div class="sport__offer">
               <h2 class="sport__title section-title">
-                Lejeu de balle le plus rapide du monde
+                Lejeu de balle le plus rapide&nbsp;du monde
               </h2>
               <p class="sport__desc">
                 La pelote basque et un sport de balle populaire, historique et
@@ -243,8 +243,7 @@
                 de nombreux pays du monde. Ses nombreuses disciplines et
                 installations toutes aussi différentes les unes des autres en
                 font un sport unique!
-              </p>
-              <p class="sport__desc">
+                <br /><br />
                 Venez assister à des parties de pelote et pourquoi pas s’y
                 initier!
               </p>
@@ -276,12 +275,12 @@
                   @@include('./tpls/cards/card.html',{})
                 </div>
               </div>
-              <div class="carousel__buttons">
+              <div class="carousel__buttons carousel-buttons">
                 <div
-                  class="swiper-button-prev carousel__button-prev slider__button slider__button-prev"
+                  class="swiper-button-prev carousel__button-prev carousel-button carousel-prev"
                 ></div>
                 <div
-                  class="swiper-button-next carousel__button-next slider__button slider__button-next"
+                  class="swiper-button-next carousel__button-next carousel-button carousel-next"
                 ></div>
               </div>
             </div>
@@ -290,8 +289,8 @@
 
         <section class="reviews">
           <div class="container reviews__container">
-            <h2 class="section-title text--centered">Les avis</h2>
-            <div class="gtc-2">
+            <h2 class="section-title text-centered reviews__title">Les avis</h2>
+            <div class="columns-2">
               @@include('./tpls/cards/review.html', {})
               @@include('./tpls/cards/review.html', {})
               @@include('./tpls/cards/review.html', {})
@@ -307,15 +306,6 @@
 
         @@include('./tpls/contacts-map.html', {})
       </main>
-
-      <div class="content">@@include('tpls/controls.html',{})</div>
-
-      <div id="popich" class="poppa">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-        consectetur velit architecto illo! A itaque saepe consequatur quam
-        iusto, quaerat ratione, earum ad et recusandae voluptates iure error
-        quidem tempore!
-      </div>
 
       @@include('tpls/footer.html',{})
     </div>

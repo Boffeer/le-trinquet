@@ -90,6 +90,19 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
+.flex--centered {
+  justify-content: center;
+}
+.flex--column {
+  flex-direction: column;
+}
+.flex--column > * {
+  width: 100%;
+}
+
+.columns-2 {
+  columns: 2;
+}
 
 // Базовые стили, шаблоны, заготовки
 @import "./base";

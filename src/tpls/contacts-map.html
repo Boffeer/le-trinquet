@@ -9,8 +9,8 @@
       </p>
       <div class="contacts__links flex">
         @@include("./socials.html", {"instagram": "instagram-accent",
-        "facebook": "facebook-accent"})
-        <div class="hints">
+        "facebook": "facebook-accent", "className": "contacts__socials"})
+        <div class="hints contacts__hints">
           <a href="#" class="hints__item hints__item--tel">
             <svg class="hints__item-icon">
               <use xlink:href="./img/icons/tel.svg#tel"></use>
@@ -19,16 +19,17 @@
           </a>
         </div>
       </div>
-      <div class="contacts__buttons">
+      <div class="flex flex--column contacts__buttons">
         <button class="button button--primary contacts__button-table">
           Réserver une table
         </button>
-        <button class="button button--primary contacts__button-ball">
+        <button class="button button--secondary contacts__button-ball">
           Réserver une partie
         </button>
       </div>
     </div>
     <div class="contacts__map">
+      <img src="./img/contact/map.jpg" alt="" />
       <!-- <iframe src="" frameborder="0"></iframe> -->
     </div>
   </div>

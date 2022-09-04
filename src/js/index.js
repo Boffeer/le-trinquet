@@ -29,6 +29,18 @@ carouselBg.on("slideChange", () => {
   console.log(carouselBg.activeIndex);
 });
 
+let carousel = new Swiper(".carousel", {
+  modules: [Navigation, Autoplay],
+  slidesPerView: 2,
+  spaceBetween: 32,
+  grabCursor: true,
+  loop: true,
+  navigation: {
+    nextEl: ".carousel__button-next",
+    prevEl: ".carousel__button-prev",
+  },
+});
+
 // Аккордеон
 // const accordions = new DismalModules.Accordions()
 
