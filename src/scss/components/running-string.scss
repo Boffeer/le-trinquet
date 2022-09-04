@@ -1,0 +1,36 @@
+.running-string {
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  gap: var(--gap);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  font-family: var(--ff-title);
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  user-select: none;
+  background: #384043;
+}
+
+.running-string__inner {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--gap);
+  justify-content: space-around;
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}

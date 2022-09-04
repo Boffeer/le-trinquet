@@ -6,17 +6,20 @@
 import "./poppa.js";
 import "./libs/custom-select.min.js";
 import "./unstable/formich.js";
-import Swiper, { Navigation } from "swiper";
+import Swiper, { Navigation, Autoplay } from "swiper";
 
 if (document.querySelector(".input--dropdown")) {
   customSelect(".input--dropdown .input__select");
 }
 
 let carouselBg = new Swiper(".carousel-bg", {
-  modules: [Navigation],
+  modules: [Navigation, Autoplay],
   slidesPerView: 4,
   grabCursor: true,
   loop: true,
+  autoplay: {
+    delay: 4000,
+  },
   navigation: {
     nextEl: ".carousel-bg__button-next",
     prevEl: ".carousel-bg__button-prev",
