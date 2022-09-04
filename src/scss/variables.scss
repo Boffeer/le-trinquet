@@ -1,7 +1,7 @@
 // ================ Responsive Start ================
 $min-width: 320px;
 $max-width: 1920px;
-$max-width-container: 1200px;
+$max-width-container: 1170px;
 $container-padding: 48;
 $container-width: $max-width-container + $container-padding;
 
@@ -70,7 +70,8 @@ $error: var(--c-error);
   --tr: 0.3s;
   --tr-regular: all var(--tr) ease;
 
-  --container-padding: #{math.div($container-padding, 2) + "px"};
+  // --container-padding: #{math.div($container-padding, 2) + "px"};
+  --container-padding: 15px;
 
   --ff-regular: "Ubuntu", sans-serif;
   --ff-title: "Poiret One", sans-serif;

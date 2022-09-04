@@ -7,6 +7,9 @@ import "./poppa.js";
 import "./libs/custom-select.min.js";
 import "./unstable/formich.js";
 import Swiper, { Navigation, Autoplay } from "swiper";
+import "./libs/lazyload.min.js";
+
+var lazyLoadInstance = new LazyLoad();
 
 if (document.querySelector(".input--dropdown")) {
   customSelect(".input--dropdown .input__select");
@@ -26,9 +29,9 @@ let carouselBg = new Swiper(".carousel-bg", {
     prevEl: ".carousel-bg__button-prev",
   },
 });
-carouselBg.on("slideChange", () => {
-  const totalSlides = [...carouselBg.el.querySelectorAll(".swiper-slide")];
-  const currentSlide = totalSlides[carouselBg.activeIndex + 2];
+function highlightCurrentSlide(swiper) {
+  const totalSlides = [...swiper.el.querySelectorAll(".swiper-slide")];
+  const currentSlide = totalSlides[swiper.activeIndex + 2];
   totalSlides.forEach((slide) => {
     if (slide == currentSlide) {
       slide.classList.add("carousel-bg__slide--active");
@@ -36,7 +39,11 @@ carouselBg.on("slideChange", () => {
       slide.classList.remove("carousel-bg__slide--active");
     }
   });
+}
+carouselBg.on("slideChange", () => {
+  highlightCurrentSlide(carouselBg);
 });
+highlightCurrentSlide(carouselBg);
 
 let carousel = new Swiper(".carousel", {
   modules: [Navigation, Autoplay],
@@ -122,12 +129,12 @@ cookiesButton.addEventListener("click", () => {
 function checkCookies(cookiesPop) {
   const cookiesSnack = document.querySelector("#snack-cookies");
   if (!cookiesPop) {
-    cookiesSnack.classList.remove("_show");
+    cookiesSnack.classList.remove("snack--visible");
     setTimeout(() => {
       cookiesSnack.remove();
     }, 2000);
   } else {
-    cookiesSnack.classList.add("_show");
+    cookiesSnack.classList.add("snack--visible");
   }
 }
 // #endregion cookies

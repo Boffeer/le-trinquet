@@ -20,10 +20,14 @@
                 régaler au bistro du trinquet
               </h1>
               <div class="flex flex--buttons">
-                <button class="hero__button-table button button--primary">
+                <button
+                  class="hero__button hero__button-table button button--primary"
+                >
                   Réserver une table
                 </button>
-                <button class="hero__button-sport button button--secondary">
+                <button
+                  class="hero__button hero__button-sport button button--secondary"
+                >
                   Réserver une partie
                 </button>
               </div>
@@ -164,10 +168,13 @@
           </div>
           <div class="container about__container">
             <picture class="about__pic">
-              <source srcset="./img/about/bullets.webp" type="image/webp" />
+              <source
+                data-srcset="./img/about/bullets.webp"
+                type="image/webp"
+              />
               <img
-                class="about__pic-img"
-                src="./img/about/bullets.jpg"
+                class="about__pic-img lazy"
+                data-src="./img/about/bullets.jpg"
                 alt="png"
               />
             </picture>
@@ -228,8 +235,12 @@
 
         <section class="sport">
           <picture class="sport__pic sport__pic-aside">
-            <source srcset="./img/ball/ball-left.webp" type="image/webp" />
-            <img class="sport__img" src="./img/ball/ball-left.jpg" alt="" />
+            <source data-srcset="./img/ball/ball-left.webp" type="image/webp" />
+            <img
+              class="sport__img lazy"
+              data-src="./img/ball/ball-left.jpg"
+              alt=""
+            />
           </picture>
           <div class="container sport__container">
             <div class="sport__offer">
@@ -244,14 +255,21 @@
                 installations toutes aussi différentes les unes des autres en
                 font un sport unique!
                 <br /><br />
-                Venez assister à des parties de pelote et pourquoi pas s’y
+                Venez assister à des parties de pelote et&nbsp;pourquoi pas s’y
                 initier!
               </p>
             </div>
           </div>
           <picture class="sport__pic sport__pic-main">
-            <source srcset="./img/ball/ball-right.webp" type="image/webp" />
-            <img class="sport__img" src="./img/ball/ball-right.jpg" alt="" />
+            <source
+              data-srcset="./img/ball/ball-right.webp"
+              type="image/webp"
+            />
+            <img
+              class="sport__img lazy"
+              data-src="./img/ball/ball-right.jpg"
+              alt=""
+            />
           </picture>
         </section>
 
@@ -290,7 +308,7 @@
         <section class="reviews">
           <div class="container reviews__container">
             <h2 class="section-title text-centered reviews__title">Les avis</h2>
-            <div class="columns-2">
+            <div class="reviews__gallery columns-2">
               @@include('./tpls/cards/review.html', {})
               @@include('./tpls/cards/review.html', {})
               @@include('./tpls/cards/review.html', {})

@@ -10,7 +10,7 @@
 
 .hero__offer {
   display: inline-block;
-  padding-top: 71px;
+  padding-top: 70px;
   padding-right: 60px;
   padding-bottom: 73px;
   padding-left: 60px;
@@ -24,6 +24,10 @@
   margin-bottom: 32px;
 }
 
+.hero__button {
+  width: 100%;
+  max-width: 270px;
+}
 .hero__button-table {
   margin-right: 30px;
 }

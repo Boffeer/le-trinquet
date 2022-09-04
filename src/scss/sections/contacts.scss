@@ -1,5 +1,5 @@
 .contacts {
-  padding-bottom: 94px;
+  padding-bottom: 96px;
   background-color: #fafafa;
 }
 .contacts__container {
@@ -13,7 +13,7 @@
   margin-right: 74px;
 }
 .contacts__title {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #212425;
 }
 .contacts__desc {
@@ -26,10 +26,17 @@
 }
 
 .contacts__links {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 .contacts__socials {
   margin-right: 25px;
+}
+.contacts__socials .socials__link {
+  --size: 35px;
+  margin-right: 14px;
+}
+.contacts__socials .socials__link:last-child {
+  margin-right: 0;
 }
 .contacts__hints {
   font-size: 18px;
@@ -37,7 +44,8 @@
   color: #2a2c31;
 }
 .contacts__hints .hints__item-text {
-  padding-top: 4px;
+  padding-top: 6px;
+  font-size: 17px;
 }
 
 .contacts__buttons {
