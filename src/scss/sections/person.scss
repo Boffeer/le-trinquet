@@ -1,0 +1,27 @@
+.person-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.person-link__pic {
+  display: block;
+  --size: 60px;
+  width: var(--size);
+  min-width: var(--size);
+  height: var(--size);
+  margin-right: 16px;
+}
+.person-link__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.person-link__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #f7f7f7;
+  text-decoration-line: underline;
+  letter-spacing: 0.1em;
+}

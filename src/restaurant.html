@@ -16,10 +16,31 @@
           <div class="container hero__container">
             <div class="hero__offer">
               <h1 class="section-title hero__title">
-                Une cuisine franche et gourmande, du plats au tapas, venez vous
-                régaler au bistro du trinquet
+                Du gourmet au sportif, une cuisine gourmande et détonante
               </h1>
-              <div class="flex flex--buttons">
+              <p class="hero__desc section-desc">
+                Des producteurs locaux et un chef qui partage avec générosité
+                son affection pour les bons (et beaux!) produits de la région,
+                tous sélectionnés au fil des saisons et des arrivages. Le secret
+                de la cuisine du trinquet.
+              </p>
+              <a href="#person" class="hero__person person-link">
+                <picture class="person-link__pic">
+                  <source
+                    srcset="./img/person/person-link.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="person-link__img"
+                    src="./img/person/person-link.jpg"
+                    alt=""
+                  />
+                </picture>
+                <span class="person-link__text"
+                  >En savoir plus sur le chef</span
+                >
+              </a>
+              <div class="flex flex--column hero__buttons">
                 <button
                   class="hero__button hero__button-table button button--primary"
                 >
@@ -151,173 +172,1191 @@
           </div>
         </section>
 
-        <section class="about">
-          <div class="running-string about__running-string">
-            <div class="running-string__inner">
-              LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET ·
-              PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE ·
-              BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS
-              · BAR A VIN ·
-            </div>
-            <div class="running-string__inner" aria-hidden="true">
-              LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET ·
-              PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE ·
-              BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS
-              · BAR A VIN ·
-            </div>
-          </div>
-          <div class="container about__container">
-            <picture class="about__pic">
-              <source
-                data-srcset="./img/about/bullets.webp"
-                type="image/webp"
-              />
-              <img
-                class="about__pic-img lazy"
-                data-src="./img/about/bullets.jpg"
-                alt="png"
-              />
-            </picture>
-            <div class="about__table-bullets table-bullets">
-              <div class="table-bullets__bullet">
-                <svg class="table-bullets__bullet-icon">
-                  <use xlink:href="./img/about/products.svg#products"></use>
-                </svg>
-                <p class="table-bullets__bullet-text">Produits frais locaux</p>
-              </div>
-              <div class="table-bullets__bullet">
-                <svg class="table-bullets__bullet-icon">
-                  <use xlink:href="./img/about/ball.svg#ball"></use>
-                </svg>
-                <p class="table-bullets__bullet-text">
-                  Jouer à la pelote <br />
-                  avec des amis
-                </p>
-              </div>
-              <div class="table-bullets__bullet">
-                <svg class="table-bullets__bullet-icon">
-                  <use xlink:href="./img/about/menu.svg#menu"></use>
-                </svg>
-                <p class="table-bullets__bullet-text">
-                  Un menu, des suggestions, <br />
-                  des tapas &amp; pintxos
-                </p>
-              </div>
-              <div class="table-bullets__bullet">
-                <svg class="table-bullets__bullet-icon">
-                  <use xlink:href="./img/about/inventory.svg#inventory"></use>
-                </svg>
-                <p class="table-bullets__bullet-text">
-                  Retransmission des plus grandes&nbsp;compétitions sportives
-                  sur&nbsp;grand écran
-                </p>
-              </div>
-              <div class="table-bullets__bullet">
-                <svg class="table-bullets__bullet-icon">
-                  <use xlink:href="./img/about/golf.svg#golf"></use>
-                </svg>
-                <p class="table-bullets__bullet-text">
-                  Deux aires de jeu : <br />
-                  Le trinquet et le fronton
-                </p>
-              </div>
-              <div class="table-bullets__bullet">
-                <svg class="table-bullets__bullet-icon">
-                  <use xlink:href="./img/about/calendar.svg#calendar"></use>
-                </svg>
-                <p class="table-bullets__bullet-text">
-                  Des animations sportives&nbsp;et culturelles toute l’année
-                </p>
+        <section class="menu">
+          <div class="menu__tabs tabs">
+            <div class="tabs__controls">
+              <div class="container tabs__container">
+                <button
+                  class="button button--secondary tabs__controls-button tabs__controls-button--acitve"
+                >
+                  Menu ou plat du jour
+                </button>
+                <button class="button button--secondary tabs__controls-button">
+                  Tapas
+                </button>
+                <button class="button button--secondary tabs__controls-button">
+                  Le bar
+                </button>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section class="sport">
-          <picture class="sport__pic sport__pic-aside">
-            <source data-srcset="./img/ball/ball-left.webp" type="image/webp" />
-            <img
-              class="sport__img lazy"
-              data-src="./img/ball/ball-left.jpg"
-              alt=""
-            />
-          </picture>
-          <div class="container sport__container">
-            <div class="sport__offer">
-              <h2 class="sport__title section-title">
-                Lejeu de balle le plus rapide&nbsp;du monde
-              </h2>
-              <p class="sport__desc">
-                La pelote basque et un sport de balle populaire, historique et
-                traditionnel. Véritable patrimoine du Pays Basque, elle se
-                pratique partout dans le sud-ouest, au niveau national et dans
-                de nombreux pays du monde. Ses nombreuses disciplines et
-                installations toutes aussi différentes les unes des autres en
-                font un sport unique!
-                <br /><br />
-                Venez assister à des parties de pelote et&nbsp;pourquoi pas s’y
-                initier!
-              </p>
-            </div>
-          </div>
-          <picture class="sport__pic sport__pic-main">
-            <source
-              data-srcset="./img/ball/ball-right.webp"
-              type="image/webp"
-            />
-            <img
-              class="sport__img lazy"
-              data-src="./img/ball/ball-right.jpg"
-              alt=""
-            />
-          </picture>
-        </section>
-
-        <section class="events">
-          <div class="container events__container">
-            <h2 class="section-title text-centered events__title">
-              Événements
-            </h2>
-            <div class="swiper carousel events__carousel">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide carousel__slide">
-                  @@include('./tpls/cards/card.html',{})
+            <div class="container">
+              <div class="tabs__pages">
+                <div class="tabs__page">
+                  <section class="menu__section">
+                    <h2 class="menu__title">MENU DU MiDI</h2>
+                    <div class="gtc-3 menu__columns-3">
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Entrées:</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info"
+                              >Salade crudité</span
+                            >
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info"
+                              >Entrée du jour</span
+                            >
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Plats:</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Merlu* sauce vierge ratatouille et riz vapeur
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Onglet beurre Maître d'hôtel ou échalotes grillés
+                              ratatouilles et frites maison
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Desserts :</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info"
+                              >Fromage de brebis
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Gâteaux basque cerise ou crème
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Glace artisanale (2 boules)
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">MENU du JOUR :</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Entrée, plat et dessert différent chaque jours
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                    </div>
+                    <div class="menu-combos">
+                      <article class="menu-combos__card">
+                        <ul class="menu-combos__list">
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Entrée</span>
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Plat</span>
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Café</span>
+                          </li>
+                        </ul>
+                        <div class="menu-combos__price">14€</div>
+                      </article>
+                      <article class="menu-combos__card">
+                        <ul class="menu-combos__list">
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Entrée</span>
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Plat</span>
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Café</span>
+                          </li>
+                        </ul>
+                        <div class="menu-combos__price">14€</div>
+                      </article>
+                      <article class="menu-combos__card">
+                        <ul class="menu-combos__list">
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Entrée</span>
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Plat</span>
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Dessert</span>
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text">Café</span>
+                          </li>
+                        </ul>
+                        <div class="menu-combos__price">14€</div>
+                      </article>
+                      <article class="menu-combos__card">
+                        <ul class="menu-combos__list">
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text"
+                              >Steak ou jambon de Bayonne</span
+                            >
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text"
+                              >Frites maison</span
+                            >
+                          </li>
+                          <li class="menu-combos__item">
+                            <span class="menu-combos__item-text"
+                              >Glace artisanale</span
+                            >
+                          </li>
+                        </ul>
+                        <div class="menu-combos__price">14€</div>
+                        <div class="menu-combos__weight">130gr.</div>
+                        <div class="menu-combos__map">CARTE</div>
+                      </article>
+                    </div>
+                  </section>
+                  <section class="menu__section">
+                    <h2 class="menu__title">plats à la carte</h2>
+                    <div class="columns-2">
+                      <article class="menu__category">
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Assiette Pélotari :
+                              <span class="menu-category__item-info-desc"
+                                >Xistora, ventrèche, œuf au plat, ratatouille,
+                                frites, salade, ardi gasna</span
+                              >
+                            </span>
+                            <span class="menu-category__item-meta">14,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Salade Landaise
+                              <span class="menu-category__item-info-desc"
+                                >Gésiers confits, magret fumé, tomates,
+                                asperges, pignons de pin, mais, croûtons,
+                                salade</span
+                              >
+                            </span>
+                            <span class="menu-category__item-meta">14,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              (Supp foie gras)
+                            </span>
+                            <span class="menu-category__item-meta">7,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Salade gourmande :
+                              <span class="menu-category__item-info-desc"
+                                >Jambon « Montauzer », melon, haricots coco,
+                                grenade, salade, amandes effilées, vinaigrette
+                                avocat acidulé
+                              </span>
+                            </span>
+                            <span class="menu-category__item-meta">12,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Salade Axoa :
+                              <span class="menu-category__item-info-desc"
+                                >Axoa, vinaigrette au jus, salade et
+                                piquillos</span
+                              >
+                            </span>
+                            <span class="menu-category__item-meta">15,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Chipirons du Trinquet :
+                            </span>
+                            <span class="menu-category__item-meta">18,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Escabèche de chipirons
+                              <span class="menu-category__item-info-desc"
+                                >Chipirons, feuille de chênes, carottes et
+                                betteraves râpées
+                              </span>
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Merlu* sauce vierge ratatouille et riz vapeur
+                            </span>
+                            <span class="menu-category__item-meta">13,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Onglet beurre maître d'hôtel ratatouille et frites
+                              maison
+                            </span>
+                            <span class="menu-category__item-meta">13,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Confit de canard « ferme Hournadet », caramel à
+                              l'orange Frites maison et salade
+                            </span>
+                            <span class="menu-category__item-meta">18,00€</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Cotes à l'os (2 personnes) frites maison et salade
+                            </span>
+                            <span class="menu-category__item-meta">48,00€</span>
+                          </li>
+                        </ul>
+                      </article>
+                    </div>
+                  </section>
+                  <section class="menu__section">
+                    <h2 class="menu__title">menu du soir</h2>
+                    <div class="gtc-3 menu__columns-3 menu__columns--small-gap">
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Entrées :</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Salade crudité
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Entrée du jour
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Tapas entrée (sélection mentionnée par une * sur
+                              la carte des tapas)
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Plats :</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Onglet, beurre maitre-d’hôtel ou échalote confite,
+                              frites maison
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Poisson du jour sauce vierge ratatouille et riz
+                              vapeur (merlu, bonite... selon arrivage au port de
+                              Capbreton)
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Plat du jour
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Plat du jour vegan
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Desserts :</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Assiette de fromage
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Gâteau basque
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Glaces
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Tapas dessert (sélection mentionnée par une * sur
+                              la carte des tapas)
+                            </span>
+                            <span class="menu-category__meta">0.5kg</span>
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">
+                          Suggestions <br />
+                          (carte midi et soir)
+                        </h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Magret de canard caramel de soja, escaoutoun et
+                              carotte au jus. Filet de dorade unilatérale crème
+                              de foie gras et gratin de courgette Salade du chef
+                              Tartare (viande ou poisson, selon produits du
+                              jour)
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                    </div>
+                  </section>
                 </div>
-                <div class="swiper-slide carousel__slide">
-                  @@include('./tpls/cards/card.html',{})
+                <div class="tabs__page">
+                  <section class="menu__section">
+                    <h2 class="menu__title">Tapas DU MIDI</h2>
+                    <div class="gtc-1-2">
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Nos Frontons</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton Kantxa (salaisons Montauzer) Jambon de
+                              Bayonne, chorizo, sauclisson, pate basque, Ardi
+                              Gasna
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 17€ 4/6 pers - 32€
+                              </span>
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton pata negra (salaisons Simon Martin)
+                              Chorizo, lomo, saucisson, palette de Bellota,
+                              fromage Bajo Duero
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 22€ 4/6 pers - 32€
+                              </span>
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton Landais (ferme Hournadet) Magret seche,
+                              saucission de cahard, rilletes de canard, terrine
+                              de foie gra, confit d’oignons
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 17€ 4/6 pers - 33€
+                              </span>
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton Fromages (selection de notre fromager
+                              “Chez Baptiste”
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 20€ 4/6 pers - 39€
+                              </span>
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__cateogry">
+                        <h3 class="menu-category__title">Nos Tapas</h3>
+                        <ul class="menu-category__list columns-2">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Tortilla maison y salmorejo
+                            </span>
+                            <span class="menu-category__item-meta">
+                              3,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Gazpacho ceur dur et iberique
+                            </span>
+                            <span class="menu-category__item-meta">
+                              3,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Boquerones
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Chiffonnade de Bellota et pan tomate
+                            </span>
+                            <span class="menu-category__item-meta">
+                              9,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Ensaladilla
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Frites et mayonnaise maison
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Brick de crevette, fromage frais et poireaux (x3)*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              5,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Rabas*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              6,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Croquetas morue*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,80€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Croquetas jambon*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Chipirons du trinquet*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              8,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Xistora grillee*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              5,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Cceurs de canart*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              6,50€
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                    </div>
+                    <div class="menu__hint text-centered section-desc">
+                      *Uniquement le soir
+                    </div>
+                  </section>
+                  <section class="menu__section">
+                    <h2 class="menu__title">Tapas DU soir</h2>
+                    <div class="gtc-1-2">
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Nos Frontons</h3>
+                        <ul class="menu-category__list">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton Kantxa (salaisons Montauzer) Jambon de
+                              Bayonne, chorizo, sauclisson, pate basque, Ardi
+                              Gasna
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 17€ 4/6 pers - 32€
+                              </span>
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton pata negra (salaisons Simon Martin)
+                              Chorizo, lomo, saucisson, palette de Bellota,
+                              fromage Bajo Duero
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 22€ 4/6 pers - 32€
+                              </span>
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton Landais (ferme Hournadet) Magret seche,
+                              saucission de cahard, rilletes de canard, terrine
+                              de foie gra, confit d’oignons
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 17€ 4/6 pers - 33€
+                              </span>
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Fronton Fromages (selection de notre fromager
+                              “Chez Baptiste”
+                              <span class="menu-category__item-info-desc">
+                                2/3 pers - 20€ 4/6 pers - 39€
+                              </span>
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                      <article class="menu__cateogry">
+                        <h3 class="menu-category__title">Nos Tapas</h3>
+                        <ul class="menu-category__list columns-2">
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Tortilla maison y salmorejo
+                            </span>
+                            <span class="menu-category__item-meta">
+                              3,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Gazpacho ceur dur et iberique
+                            </span>
+                            <span class="menu-category__item-meta">
+                              3,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Boquerones
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Chiffonnade de Bellota et pan tomate
+                            </span>
+                            <span class="menu-category__item-meta">
+                              9,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Ensaladilla
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Frites et mayonnaise maison
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Brick de crevette, fromage frais et poireaux (x3)*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              5,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Rabas*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              6,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Croquetas morue*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,80€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Croquetas jambon*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              4,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Chipirons du trinquet*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              8,50€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Xistora grillee*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              5,00€
+                            </span>
+                          </li>
+                          <li class="menu-category__item">
+                            <span class="menu-category__item-info">
+                              Cceurs de canart*
+                            </span>
+                            <span class="menu-category__item-meta">
+                              6,50€
+                            </span>
+                          </li>
+                        </ul>
+                      </article>
+                    </div>
+                  </section>
                 </div>
-                <div class="swiper-slide carousel__slide">
-                  @@include('./tpls/cards/card.html',{})
-                </div>
-                <div class="swiper-slide carousel__slide">
-                  @@include('./tpls/cards/card.html',{})
+                <div class="tabs__page">
+                  <section class="menu__section">
+                    <h2 class="menu__title">Le bar</h2>
+                    <div class="columns-3 menu-bar">
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">La bière</h3>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Blonde</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">IPA</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">
+                          Les boissons chaudes
+                        </h3>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Nom</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Le vin</h3>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Rouge</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Blanc</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Rose</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Les coctails</h3>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Nom</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Nom</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                Main Road
+                                <span class="menu-category__item-info-desc">
+                                  light lager 4% / 14 ibu
+                                </span>
+                              </span>
+                              <span class="menu-category__item-meta">
+                                0.5L <br />
+                                1L
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </article>
+                      <article class="menu__category">
+                        <h3 class="menu-category__title">Les softs</h3>
+                        <div class="menu__subcategory">
+                          <h4 class="menu__subtitle">Nom</h4>
+                          <ul class="menu-category__list">
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                            <li class="menu-category__item">
+                              <span class="menu-category__item-info">
+                                MARTINI Prosecco D.O.C
+                              </span>
+                              <span class="menu-category__item-meta">
+                                187ml
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </article>
+                    </div>
+                  </section>
                 </div>
               </div>
-              <div class="carousel__buttons carousel-buttons">
-                <div
-                  class="swiper-button-prev carousel__button-prev carousel-button carousel-prev"
-                ></div>
-                <div
-                  class="swiper-button-next carousel__button-next carousel-button carousel-next"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="reviews">
-          <div class="container reviews__container">
-            <h2 class="section-title text-centered reviews__title">Les avis</h2>
-            <div class="reviews__gallery columns-2">
-              @@include('./tpls/cards/review.html', {})
-              @@include('./tpls/cards/review.html', {})
-              @@include('./tpls/cards/review.html', {})
-              @@include('./tpls/cards/review.html', {})
-            </div>
-            <div class="flex flex--buttons flex--centered">
-              <button class="button button--secondary reviews__button">
-                Montrer plus
-              </button>
             </div>
           </div>
         </section>

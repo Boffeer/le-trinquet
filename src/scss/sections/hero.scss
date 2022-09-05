@@ -38,3 +38,24 @@
 .hero__button-table {
   margin-right: 30px;
 }
+
+.hero__person {
+  margin-bottom: 27px;
+}
+.hero__desc {
+  max-width: 520px;
+  margin-bottom: 27px;
+}
+
+.hero__buttons {
+  max-width: 370px;
+}
+.hero__buttons > .button {
+  width: 100%;
+  max-width: 100%;
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+.hero__buttons > .button:last-child {
+  margin-bottom: 0;
+}
