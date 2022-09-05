@@ -28,11 +28,11 @@
   transition: var(--tr-regular);
 }
 
-.tabs__controls-button--acitve {
+.tabs__controls-button.tab--active {
   font-weight: 600;
   color: #fff;
 }
-.tabs__controls-button--acitve::after {
+.tabs__controls-button.tab--active::after {
   width: 100%;
 }
 
@@ -41,4 +41,11 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.tabs__page {
+  display: none;
+}
+.tabs__page.tab--active {
+  display: block;
 }

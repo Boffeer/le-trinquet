@@ -8,6 +8,7 @@ import "./libs/custom-select.min.js";
 import "./unstable/formich.js";
 import Swiper, { Navigation, Autoplay } from "swiper";
 import "./libs/lazyload.min.js";
+import "./unstable/tabs.js";
 
 var lazyLoadInstance = new LazyLoad();
 
