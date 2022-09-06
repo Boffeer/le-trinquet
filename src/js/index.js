@@ -17,59 +17,62 @@ if (document.querySelector(".input--dropdown")) {
 }
 
 // #region carousels
-let carouselBg = new Swiper(".carousel-bg", {
-  modules: [Navigation, Autoplay],
-  slidesPerView: 4,
-  grabCursor: true,
-  loop: true,
-  autoplay: {
-    delay: 4000,
-  },
-  navigation: {
-    nextEl: ".carousel-bg__button-next",
-    prevEl: ".carousel-bg__button-prev",
-  },
-  on: {
-    beforeInit: function () {
-      if (this.el.dataset.slides) {
-        this.params.slidesPerView = +this.el.dataset.slides;
-      }
-      console.log(this);
+if (document.querySelector(".carousel-bg")) {
+  let carouselBg = new Swiper(".carousel-bg", {
+    modules: [Navigation, Autoplay],
+    slidesPerView: 4,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
     },
-  },
-});
-function highlightCurrentSlide(swiper) {
-  const totalSlides = [...swiper.el.querySelectorAll(".swiper-slide")];
-  const currentSlide =
-    totalSlides[swiper.activeIndex + swiper.params.slidesPerView / 2];
-  totalSlides.forEach((slide) => {
-    if (slide == currentSlide) {
-      slide.classList.add("carousel-bg__slide--active");
-    } else {
-      slide.classList.remove("carousel-bg__slide--active");
-    }
+    navigation: {
+      nextEl: ".carousel-bg__button-next",
+      prevEl: ".carousel-bg__button-prev",
+    },
+    on: {
+      beforeInit: function () {
+        if (this.el.dataset.slides) {
+          this.params.slidesPerView = +this.el.dataset.slides;
+        }
+        console.log(this);
+      },
+    },
   });
+  function highlightCurrentSlide(swiper) {
+    const totalSlides = [...swiper.el.querySelectorAll(".swiper-slide")];
+    const currentSlide =
+      totalSlides[swiper.activeIndex + swiper.params.slidesPerView / 2];
+    totalSlides.forEach((slide) => {
+      if (slide == currentSlide) {
+        slide.classList.add("carousel-bg__slide--active");
+      } else {
+        slide.classList.remove("carousel-bg__slide--active");
+      }
+    });
+  }
+  carouselBg.on("slideChange", () => {
+    highlightCurrentSlide(carouselBg);
+  });
+  highlightCurrentSlide(carouselBg);
 }
 
-carouselBg.on("slideChange", () => {
-  highlightCurrentSlide(carouselBg);
-});
-highlightCurrentSlide(carouselBg);
-
-let carousel = new Swiper(".carousel", {
-  modules: [Navigation, Autoplay],
-  slidesPerView: 2,
-  spaceBetween: 32,
-  grabCursor: true,
-  loop: true,
-  navigation: {
-    nextEl: ".carousel__button-next",
-    prevEl: ".carousel__button-prev",
-  },
-});
+if (document.querySelector(".carousel")) {
+  let carousel = new Swiper(".carousel", {
+    modules: [Navigation, Autoplay],
+    slidesPerView: 2,
+    spaceBetween: 32,
+    grabCursor: true,
+    loop: true,
+    navigation: {
+      nextEl: ".carousel__button-next",
+      prevEl: ".carousel__button-prev",
+    },
+  });
+}
+// #endredion carousels
 
 const anchors = document.querySelectorAll('a[href*="#"]');
-
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -80,8 +83,6 @@ for (let anchor of anchors) {
     });
   });
 }
-
-// #endredion carousels
 
 // Аккордеон
 // const accordions = new DismalModules.Accordions()

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="contacts contacts-page">
+          <div class="container contacts__container contacts-page__container">
+            <div class="contacts__info contacts-page__info">
+              <h2 class="contacts__title section-title">Le Trinquet</h2>
+              <p class="contacts__desc section-desc">Contactez-nous via nos réseaux ou directement par téléphone ou mail</p>
+              <div class="contacts__links flex">
+                @@include("./tpls/socials.html", {"instagram": "instagram-accent", "facebook": "facebook-accent", "className": "contacts__socials"})
+                <div class="hints contacts__hints">
+                  <a href="#" class="hints__item hints__item--tel">
+                    <svg class="hints__item-icon">
+                      <use xlink:href="./img/icons/tel.svg#tel"></use>
+                    </svg>
+                    <span class="hints__item-text">05 58 70 91 54</span>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex--column contacts__buttons">
+                <button class="button button--primary contacts__button-table">Réserver une table</button>
+                <button class="button button--secondary contacts__button-ball">Réserver une partie</button>
+              </div>
+            </div>
+            <form action="mail.php" class="form contacts__form">
+              <div class="contacts__form-grid">
+                @@include('./tpls/inputs/name.html', {}) @@include('./tpls/inputs/tel.html', {}) @@include('./tpls/inputs/email.html', {}) @@include('./tpls/inputs/textarea.html', {})
+                <button class="button button--primary contacts__form-submit">Envoyer le message</button>
+              </div>
+            </form>
+            <div class="contacts__map contacts-page__map">
+              <img src="./img/contact/map.jpg" alt="" />
+              <!-- <iframe src="" frameborder="0"></iframe> -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
