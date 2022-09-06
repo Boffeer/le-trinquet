@@ -111,6 +111,10 @@ body {
   column-gap: 30px;
 }
 
+.gtc-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .gtc-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -119,6 +123,52 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 14px;
+}
+
+.gallery {
+  row-gap: 54px;
+  column-gap: 54px;
+  max-width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.section--has-circle-top {
+  position: relative;
+}
+.section__circle-top {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #212425;
+  border-radius: 50%;
+}
+
+.section__circle-top::before,
+.section__circle-top::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  border: 1px solid #b24d2b;
+  border-radius: 50%;
+}
+.section__circle-top::before {
+  width: 86%;
+  height: 86%;
+}
+.section__circle-top::after {
+  width: 78%;
+  height: 78%;
 }
 
 // Базовые стили, шаблоны, заготовки

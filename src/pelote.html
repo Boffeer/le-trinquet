@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Principale</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__offer">
+              <h1 class="section-title hero__title">Participez que ce soit en loisir ou en mode compétition au travers des nombreux événements organisés au trinquet et sur le fronton.</h1>
+              <p class="section-desc hero__desc">
+                Venez jouer à la pelote entre amis.
+                <br /><br />
+                Pour les joueurs expérimentés, nous organisons des compétitions (tournois, championnats, etc).
+                <br /><br />
+                Nous mettons également en place des opérations de team building avec l’organisation d’animations pour entreprises ou pour des groupes (initiations, démonstrations, compétitions). Le tout, couplé avec des formules de restauration.
+              </p>
+              <div class="flex flex--buttons">
+                <button class="hero__button hero__button-sport button button--primary">Réserver une partie</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper carousel-bg" data-slides="2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-2.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-2.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-1.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-1.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-2.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-2.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-1.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-1.jpg" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="carousel-bg__buttons carousel-buttons">
+              <div class="swiper-button-prev carousel-bg__button-prev carousel-button carousel-prev"></div>
+              <div class="swiper-button-next carousel-bg__button-next carousel-button carousel-next"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about pelote">
+          <div class="running-string about__running-string">
+            <div class="running-string__inner">LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN ·</div>
+            <div class="running-string__inner" aria-hidden="true">LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN ·</div>
+          </div>
+          <div class="gallery about__gallery gtc-2">
+            <picture class="about__pic">
+              <source data-srcset="./img/ball/location/left.webp" type="image/webp" />
+              <img class="about__img lazy" data-src="./img/ball/location/left.jpg" alt="png" />
+            </picture>
+            <picture class="about__pic">
+              <source data-srcset="./img/ball/location/right.webp" type="image/webp" />
+              <img class="about__img lazy" data-src="./img/ball/location/right.jpg" alt="png" />
+            </picture>
+          </div>
+          <div class="container about__container">
+            <div class="pelote__table-bullets about__table-bullets table-bullets">
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/ball/bullets/fields.svg#fields"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Deux aires de jeu : <br />
+                  Le trinquet et le fronton
+                </p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/ball/bullets/enter.svg#enter"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">Entrée indépendante pour les sportifs</p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/ball/bullets/club.svg#club"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  L’ASH, le club <br />
+                  de pelote basque
+                </p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/ball/bullets/shop.svg#shop"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">Boutique avec tout ce dont vous avez besoin pour jouer</p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/ball/bullets/ball.svg#ball"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Jouez à la pelote <br />
+                  avec des amis
+                </p>
+              </div>
+              <div class="table-bullets__bullet">
+                <svg class="table-bullets__bullet-icon">
+                  <use xlink:href="./img/ball/bullets/prize.svg#prize"></use>
+                </svg>
+                <p class="table-bullets__bullet-text">
+                  Participez à des <br />
+                  compétitions
+                </p>
+              </div>
+            </div>
+            <div class="flex flex--centered">
+              <button class="button button--primary pelote__button">Réserver une partie</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="container video__container">
+            <div class="video-card">
+              <div class="gtc-2 video-card__gtc">
+                <div class="video-card__info">
+                  <h2 class="section-title video-card__title">Ressentez l’énergie d’une grande compétition</h2>
+                  <p class="section-desc video-card__desc">Et les fans vous regarderont depuis le restaurant tel un sportif lors d’un grand événement</p>
+                </div>
+                <div class="video-card__media">
+                  <picture class="video-card__pic">
+                    <source srcset="./img/ball/video/video-cover.webp" type="image/webp" />
+                    <img class="video-card__img" src="./img/ball/video/video-cover.jpg" alt="" />
+                  </picture>
+                  <iframe data-src="" frameborder="0" class="video-card__video"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing section--has-circle-top">
+          <div class="section__circle-top"></div>
+          <div class="container pricing__container">
+            <h2 class="section-title text-centered pricing__title">Les tarifs</h2>
+            <div class="pricing__table">
+              <article class="pricing-card">
+                <div class="pricing-card__content">
+                  <h3 class="pricing-card__title">
+                    <svg class="pricing-card__title-icon">
+                      <use xlink:href="./img/icons/hourglasses.svg#hourglasses"></use>
+                    </svg>
+                    <span class="pricing-card__title-text">Location trinquet</span>
+                  </h3>
+                  <p class="pricing-card__desc">location sur créneaux libres, au tarifs indiqués. Possibilité de réserver un créneau en ligne, via l'application téléphone Le Trinquet ou directement par téléphone (18€ heures pleines, 14€ heures creuses. A payer sur place)</p>
+                  <ul class="pricing-card__list">
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">Heures creuses</div>
+                        <div class="pricing-card__price-desc">08:00-12:00 et 14:00 -17:00</div>
+                      </div>
+                      <div class="pricing-card__price-meta">
+                        14€<br />
+                        heure
+                      </div>
+                    </li>
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">Heures pleines</div>
+                        <div class="pricing-card__price-desc">12:00-14:00 et 17:00 -23:00</div>
+                      </div>
+                      <div class="pricing-card__price-meta">
+                        18€<br />
+                        heure
+                      </div>
+                    </li>
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">Tarif jeunes</div>
+                        <div class="pricing-card__price-desc">(moins de 16 ans)</div>
+                      </div>
+                      <div class="pricing-card__price-meta">
+                        12€<br />
+                        heure
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex flex--centered">
+                  <button class="button button button--primary">Réserver une partie</button>
+                </div>
+              </article>
+              <article class="pricing-card">
+                <div class="pricing-card__content">
+                  <h3 class="pricing-card__title">
+                    <svg class="pricing-card__title-icon">
+                      <use xlink:href="./img/icons/calendar.svg#calendar"></use>
+                    </svg>
+                    <span class="pricing-card__title-text">Abonnements</span>
+                  </h3>
+                  <p class="pricing-card__desc">Une heure réservée et payée pour une période</p>
+                  <ul class="pricing-card__list">
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">1 heure pleine au trimestre</div>
+                      </div>
+                      <div class="pricing-card__price-meta">225€</div>
+                    </li>
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">1 heure creuse au trimestre</div>
+                      </div>
+                      <div class="pricing-card__price-meta">175€</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex flex--centered"><button class="button button button--primary">Réserver une partie</button></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        @@include('./tpls/contacts-map.html', {})
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
