@@ -29,10 +29,19 @@ let carouselBg = new Swiper(".carousel-bg", {
     nextEl: ".carousel-bg__button-next",
     prevEl: ".carousel-bg__button-prev",
   },
+  on: {
+    beforeInit: function () {
+      if (this.el.dataset.slides) {
+        this.params.slidesPerView = +this.el.dataset.slides;
+      }
+      console.log(this);
+    },
+  },
 });
 function highlightCurrentSlide(swiper) {
   const totalSlides = [...swiper.el.querySelectorAll(".swiper-slide")];
-  const currentSlide = totalSlides[swiper.activeIndex + 2];
+  const currentSlide =
+    totalSlides[swiper.activeIndex + swiper.params.slidesPerView / 2];
   totalSlides.forEach((slide) => {
     if (slide == currentSlide) {
       slide.classList.add("carousel-bg__slide--active");
@@ -41,6 +50,7 @@ function highlightCurrentSlide(swiper) {
     }
   });
 }
+
 carouselBg.on("slideChange", () => {
   highlightCurrentSlide(carouselBg);
 });
@@ -57,6 +67,20 @@ let carousel = new Swiper(".carousel", {
     prevEl: ".carousel__button-prev",
   },
 });
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const blockID = anchor.getAttribute("href").substr(1);
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
 // #endredion carousels
 
 // Аккордеон

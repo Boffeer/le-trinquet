@@ -17,3 +17,39 @@
 .text-centered {
   text-align: center;
 }
+
+.quote {
+  position: relative;
+  display: block;
+  max-width: 360px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 18px;
+  padding-left: 32px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #f7f7f7;
+  letter-spacing: 0.1em;
+}
+
+.quote::before,
+.quote::after {
+  position: absolute;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  opacity: 0.2;
+}
+.quote::before {
+  top: -9px;
+  left: 0;
+  content: "“";
+}
+.quote::after {
+  right: 97px;
+  bottom: -42px;
+  content: "”";
+}

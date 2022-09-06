@@ -118,6 +118,7 @@ body {
 .gtc-1-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  column-gap: 14px;
 }
 
 // Базовые стили, шаблоны, заготовки

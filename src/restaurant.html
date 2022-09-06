@@ -15,7 +15,7 @@
         <section class="hero">
           <div class="container hero__container">
             <div class="hero__offer">
-              <h1 class="section-title hero__title">Du gourmet au sportif, une cuisine gourmande et détonante</h1>
+              <h1 class="section-title hero__title">Du gourmet au sportif, une&nbsp;cuisine gourmande et&nbsp;détonante</h1>
               <p class="hero__desc section-desc">Des producteurs locaux et un chef qui partage avec générosité son affection pour les bons (et beaux!) produits de la région, tous sélectionnés au fil des saisons et des arrivages. Le secret de la cuisine du trinquet.</p>
               <a href="#person" class="hero__person person-link">
                 <picture class="person-link__pic">
@@ -30,7 +30,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper carousel-bg">
+          <div class="swiper carousel-bg" data-slides="2">
             <div class="swiper-wrapper">
               <div class="swiper-slide carousel-bg__slide">
                 <picture class="carousel-bg__pic">
@@ -916,6 +916,45 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="person lazy" data-bg="./img/person/bg.jpg" id="person">
+          <div class="container person__container">
+            <div class="person__info">
+              <div class="person__bio">
+                <div class="person__post">Chef</div>
+                <h2 class="person__name">Christophe NAVARO</h2>
+                <blockquote class="quote person__quote">J'ai mis tout mon savoir, mon expérience et mon âme dans la carte. C'est avec enthousiasme que je vous attends pour partager ma passion avec vous"</blockquote>
+              </div>
+              <ul class="person__bullets">
+                <li class="person__bullet">
+                  <picture class="person__bullet-pic">
+                    <source data-srcset="./img/person/language.webp" type="image/webp" />
+                    <img class="person__bullet-img lazy" data-src="./img/person/language.png" alt="" />
+                  </picture>
+                  <span class="person__bullet-text">Une longue expérience en Espagne lui a donné le goût et la passion pour la cuisine ibérique, autour du tapas et autres spécialités dont il maîtrise parfaitement toutes les subtilités</span>
+                </li>
+                <li class="person__bullet">
+                  <picture class="person__bullet-pic">
+                    <source data-srcset="./img/person/hat.webp" type="image/webp" />
+                    <img class="person__bullet-img lazy" data-src="./img/person/hat.png" alt="" />
+                  </picture>
+                  <span class="person__bullet-text">Plus de 25 ans d'expérience dans le domaine de la restauration. Parmi celles-ci, 17 ans - d’expérience en tant que chef.</span>
+                </li>
+                <li class="person__bullet">
+                  <picture class="person__bullet-pic">
+                    <source data-srcset="./img/person/pasta.webp" type="image/webp" />
+                    <img class="person__bullet-img lazy" data-src="./img/person/pasta.png" alt="" />
+                  </picture>
+                  <span class="person__bullet-text">Expert en HACCP, QHSE : porte une attention particulière à la sécurité, à la qualité des produits et des repas.</span>
+                </li>
+              </ul>
+            </div>
+            <picture class="person__pic">
+              <source data-srcset="./img/person/chef-hero.webp," type="image/webp" />
+              <img class="person__img lazy" data-src="./img/person/chef-hero.png" alt="" />
+            </picture>
           </div>
         </section>
 
