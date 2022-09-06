@@ -71,3 +71,18 @@
 .card__meta-bullet--time::before {
   @include getmask("../img/events/time.svg");
 }
+
+.card--no-pic {
+  padding-top: 36px;
+}
+
+.card__link {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #f7f7f7;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+}

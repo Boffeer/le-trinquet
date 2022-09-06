@@ -164,6 +164,43 @@ function checkCookies(cookiesPop) {
 }
 // #endregion cookies
 
+// #region eventCards
+const eventsGallery = document.querySelectorAll(".events__gallery .card");
+let picCounter = 1;
+let minusModifier = 0;
+eventsGallery.forEach((card, index) => {
+  let currentIndex = index - minusModifier;
+  if (index == picCounter) {
+    if (picCounter == 1) {
+      card.style.setProperty("--grid-row-start", currentIndex);
+      card.style.setProperty("--grid-row-end", picCounter + 2);
+    } else {
+      card.style.setProperty("--grid-row-start", currentIndex - 1);
+      card.style.setProperty("--grid-row-end", currentIndex + 1);
+    }
+    picCounter = picCounter + 3;
+  } else {
+    // for every 6 element
+    card.style.setProperty("--grid-row-start", currentIndex);
+    card.style.setProperty("--grid-row-end", currentIndex + 1);
+    if (index + 1 == picCounter - 1) {
+      card.style.setProperty("--grid-row-start", currentIndex - 1);
+      card.style.setProperty("--grid-row-end", currentIndex);
+      card.style.setProperty("--shit", picCounter);
+    }
+  }
+  if (index >= 5) {
+    if (index == 5) {
+      minusModifier++;
+    } else {
+      if ((index + 1) % 3 == 0) {
+        minusModifier++;
+      }
+    }
+  }
+});
+// #endregion eventCards
+
 // function normalizeMenuMobileHeight() {
 //   if (window.innerWidth < 1200) {
 //     document.querySelector(".menu").style.height = `${

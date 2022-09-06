@@ -11,3 +11,64 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.events__gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+  counter-reset: cards;
+}
+
+.events__gallery > .card {
+  --padding-horizontal: 38px;
+  grid-row: var(--grid-row-start) / var(--grid-row-end);
+  counter-increment: card;
+}
+
+.events__gallery > .card:nth-of-type(6n + 6) {
+  grid-column: 8 / 13;
+}
+.events__gallery > .card:nth-of-type(6n + 5) {
+  grid-column: 1 / 8;
+}
+.events__gallery > .card:nth-of-type(6n + 4) {
+  grid-column: 8 / 13;
+}
+.events__gallery > .card:nth-of-type(6n + 3) {
+  grid-column: 1 / 6;
+}
+.events__gallery > .card:nth-of-type(6n + 2) {
+  grid-column: 6 / 13;
+}
+.events__gallery > .card:nth-of-type(1),
+.events__gallery > .card:nth-of-type(6n + 1) {
+  grid-column: 1 / 6;
+}
+
+.events__gallery > .card--no-pic .card__title {
+  font-size: 19px;
+  line-height: 126%;
+}
+.events__gallery > .card--no-pic .card__desc {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.events__gallery > .card--no-pic .card__pic {
+  height: 280px;
+}
+.events__gallery > .card--no-pic .card__meta {
+  padding-right: 20px;
+  padding-bottom: 18px;
+  padding-left: 21px;
+}
+.events__gallery > .card--no-pic .card__meta-bullet {
+  margin-bottom: 3px;
+  font-size: 13px;
+  line-height: 150%;
+}
+
+.events__gallery > .card--no-pic .card__meta-bullet--time {
+  padding-top: 2px;
+}

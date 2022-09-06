@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Principale</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__offer">
+              <h1 class="section-title hero__title">concerts, spectacles, brunchs et autres événements</h1>
+              <p class="section-desc hero__desc">
+                Nous faisons plus que de simples événements sportifs.
+                <br /><br />
+                Trouvez dans le planning ce qui vous intéresse et venez ou écrivez-nous si vous souhaitez organiser votre événement.
+              </p>
+              <div class="flex flex--column hero__buttons">
+                <button class="hero__button hero__button-sport button button--primary">Réserver une table</button>
+                <button class="hero__button hero__button-sport button button--secondary">Voir les evenements a venir</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper carousel-bg" data-slides="2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-2.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-2.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-1.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-1.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-2.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-2.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/ball/carousel/ball-1.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/ball/carousel/ball-1.jpg" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="carousel-bg__buttons carousel-buttons">
+              <div class="swiper-button-prev carousel-bg__button-prev carousel-button carousel-prev"></div>
+              <div class="swiper-button-next carousel-bg__button-next carousel-button carousel-next"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about pelote">
+          <div class="running-string about__running-string">
+            <div class="running-string__inner">Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche ·</div>
+            <div class="running-string__inner" aria-hidden="true">Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche ·</div>
+          </div>
+          <div class="container events__container events__gallery">@@include('./tpls/cards/card-no-pic.html') @@include('./tpls/cards/card.html') @@include('./tpls/cards/card-no-pic.html') @@include('./tpls/cards/card-no-pic.html') @@include('./tpls/cards/card.html') @@include('./tpls/cards/card-no-pic.html') @@include('./tpls/cards/card-no-pic.html') @@include('./tpls/cards/card.html') @@include('./tpls/cards/card-no-pic.html') @@include('./tpls/cards/card-no-pic.html') @@include('./tpls/cards/card.html') @@include('./tpls/cards/card-no-pic.html')</div>
+        </section>
+
+        <section class="pricing section--has-circle-top">
+          <div class="section__circle-top"></div>
+          <div class="container pricing__container">
+            <h2 class="section-title text-centered pricing__title">Les tarifs</h2>
+            <div class="pricing__table">
+              <article class="pricing-card">
+                <div class="pricing-card__content">
+                  <h3 class="pricing-card__title">
+                    <svg class="pricing-card__title-icon">
+                      <use xlink:href="./img/icons/hourglasses.svg#hourglasses"></use>
+                    </svg>
+                    <span class="pricing-card__title-text">Location trinquet</span>
+                  </h3>
+                  <p class="pricing-card__desc">location sur créneaux libres, au tarifs indiqués. Possibilité de réserver un créneau en ligne, via l'application téléphone Le Trinquet ou directement par téléphone (18€ heures pleines, 14€ heures creuses. A payer sur place)</p>
+                  <ul class="pricing-card__list">
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">Heures creuses</div>
+                        <div class="pricing-card__price-desc">08:00-12:00 et 14:00 -17:00</div>
+                      </div>
+                      <div class="pricing-card__price-meta">
+                        14€<br />
+                        <div class="pricing-card__price-meta-value">heure</div>
+                      </div>
+                    </li>
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">Heures pleines</div>
+                        <div class="pricing-card__price-desc">12:00-14:00 et 17:00 -23:00</div>
+                      </div>
+                      <div class="pricing-card__price-meta">
+                        18€<br />
+                        <div class="pricing-card__price-meta-value">heure</div>
+                      </div>
+                    </li>
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">Tarif jeunes</div>
+                        <div class="pricing-card__price-desc">(moins de 16 ans)</div>
+                      </div>
+                      <div class="pricing-card__price-meta">
+                        12€<br />
+                        <div class="pricing-card__price-meta-value">heure</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="button button button--primary pricing__button">Réserver une partie</button>
+              </article>
+              <article class="pricing-card">
+                <div class="pricing-card__content">
+                  <h3 class="pricing-card__title">
+                    <svg class="pricing-card__title-icon">
+                      <use xlink:href="./img/icons/calendar.svg#calendar"></use>
+                    </svg>
+                    <span class="pricing-card__title-text">Abonnements</span>
+                  </h3>
+                  <p class="pricing-card__desc">Une heure réservée et payée pour une période</p>
+                  <ul class="pricing-card__list">
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">1 heure pleine au trimestre</div>
+                      </div>
+                      <div class="pricing-card__price-meta">225€</div>
+                    </li>
+                    <li class="pricing-card__price">
+                      <div class="pricing-card__price-info">
+                        <div class="pricing-card__price-name">1 heure creuse au trimestre</div>
+                      </div>
+                      <div class="pricing-card__price-meta">175€</div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="button button button--primary pricing__button">Réserver une partie</button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="card-juction pelote__card-junction pelote-loyalty">
+          <div class="container card-juction__container">
+            <div class="big-card">
+              <div class="gtc-2 big-card__gtc">
+                <div class="big-card__info">
+                  <h2 class="section-title big-card__title pelote__big-card-title">Carte Le Trinquet :</h2>
+                  <div class="flex">
+                    <button class="button button--primary pelote-loyalty__button">Obtenir la carte le TRINQUET</button>
+                  </div>
+                </div>
+                <ul class="pelote-loyalty__bullets gtc-2">
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text">Offres pour des consommations sur des évènements et animations et toute l’année sur une sélection de produits (Ex: assiette pelotari)</span>
+                  </li>
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text">5% de réduction sur les produits boutique</span>
+                  </li>
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text"
+                      >Invitations lors <br />
+                      d’événements</span
+                    >
+                  </li>
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text">Offres spéciales lors d’événements</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('./tpls/contacts-map.html', {})
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
