@@ -64,8 +64,8 @@
 
         <section class="about pelote">
           <div class="running-string about__running-string">
-            <div class="running-string__inner">LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN ·</div>
-            <div class="running-string__inner" aria-hidden="true">LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN · LE TRINQUET · PELOTE · BISTRO · TAPAS · BAR A VIN ·</div>
+            <div class="running-string__inner">Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche ·</div>
+            <div class="running-string__inner" aria-hidden="true">Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche · Le trinquet · gourmande · franche ·</div>
           </div>
           <div class="gallery about__gallery gtc-2">
             <picture class="about__pic">
@@ -136,18 +136,18 @@
 
         <section class="video">
           <div class="container video__container">
-            <div class="video-card">
-              <div class="gtc-2 video-card__gtc">
-                <div class="video-card__info">
-                  <h2 class="section-title video-card__title">Ressentez l’énergie d’une grande compétition</h2>
-                  <p class="section-desc video-card__desc">Et les fans vous regarderont depuis le restaurant tel un sportif lors d’un grand événement</p>
+            <div class="big-card">
+              <div class="gtc-2 big-card__gtc">
+                <div class="big-card__info">
+                  <h2 class="section-title big-card__title">Ressentez l’énergie d’une grande compétition</h2>
+                  <p class="section-desc big-card__desc">Et les fans vous regarderont depuis le restaurant tel un sportif lors d’un grand événement</p>
                 </div>
-                <div class="video-card__media">
-                  <picture class="video-card__pic">
+                <div class="big-card__media">
+                  <picture class="big-card__pic">
                     <source srcset="./img/ball/video/video-cover.webp" type="image/webp" />
-                    <img class="video-card__img" src="./img/ball/video/video-cover.jpg" alt="" />
+                    <img class="big-card__img" src="./img/ball/video/video-cover.jpg" alt="" />
                   </picture>
-                  <iframe data-src="" frameborder="0" class="video-card__video"></iframe>
+                  <iframe data-src="" frameborder="0" class="big-card__video"></iframe>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@
                       </div>
                       <div class="pricing-card__price-meta">
                         14€<br />
-                        heure
+                        <div class="pricing-card__price-meta-value">heure</div>
                       </div>
                     </li>
                     <li class="pricing-card__price">
@@ -186,7 +186,7 @@
                       </div>
                       <div class="pricing-card__price-meta">
                         18€<br />
-                        heure
+                        <div class="pricing-card__price-meta-value">heure</div>
                       </div>
                     </li>
                     <li class="pricing-card__price">
@@ -196,14 +196,12 @@
                       </div>
                       <div class="pricing-card__price-meta">
                         12€<br />
-                        heure
+                        <div class="pricing-card__price-meta-value">heure</div>
                       </div>
                     </li>
                   </ul>
                 </div>
-                <div class="flex flex--centered">
-                  <button class="button button button--primary">Réserver une partie</button>
-                </div>
+                <button class="button button button--primary pricing__button">Réserver une partie</button>
               </article>
               <article class="pricing-card">
                 <div class="pricing-card__content">
@@ -229,8 +227,52 @@
                     </li>
                   </ul>
                 </div>
-                <div class="flex flex--centered"><button class="button button button--primary">Réserver une partie</button></div>
+                <button class="button button button--primary pricing__button">Réserver une partie</button>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="card-juction pelote__card-junction pelote-loyalty">
+          <div class="container card-juction__container">
+            <div class="big-card">
+              <div class="gtc-2 big-card__gtc">
+                <div class="big-card__info">
+                  <h2 class="section-title big-card__title pelote__big-card-title">Carte Le Trinquet :</h2>
+                  <div class="flex">
+                    <button class="button button--primary pelote-loyalty__button">Obtenir la carte le TRINQUET</button>
+                  </div>
+                </div>
+                <ul class="pelote-loyalty__bullets gtc-2">
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text">Offres pour des consommations sur des évènements et animations et toute l’année sur une sélection de produits (Ex: assiette pelotari)</span>
+                  </li>
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text">5% de réduction sur les produits boutique</span>
+                  </li>
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text"
+                      >Invitations lors <br />
+                      d’événements</span
+                    >
+                  </li>
+                  <li class="pelote-loyalty__bullet">
+                    <svg class="pelote-loyalty__icon">
+                      <use xlink:href="./img/ball/shop.svg#shop"></use>
+                    </svg>
+                    <span class="pelote-loyalty__bullet-text">Offres spéciales lors d’événements</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
