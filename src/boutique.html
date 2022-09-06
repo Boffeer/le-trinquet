@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('tpls/header.html',{})
+
+      <main class="main">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__offer">
+              <h1 class="section-title hero__title">
+                Tout pour la <br />
+                pelote et une alimentation saine et gourmande !
+              </h1>
+              <p class="hero__desc section-desc">Vous pouvez acheter chez nous produits locaux et tout, ce qu'il faut pour jouer à la pelote.</p>
+            </div>
+          </div>
+          <div class="swiper carousel-bg" data-slides="2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/shop/shop-slide-1.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/shop/shop-slide-1.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide carousel-bg__slide">
+                <picture class="carousel-bg__pic">
+                  <source srcset="./img/shop/shop-slide-2.webp" type="image/webp" />
+                  <img class="carousel-bg__img" src="./img/shop/shop-slide-2.jpg" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="carousel-bg__buttons carousel-buttons">
+              <div class="swiper-button-prev carousel-bg__button-prev carousel-button carousel-prev"></div>
+              <div class="swiper-button-next carousel-bg__button-next carousel-button carousel-next"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="boutique">
+          <div class="boutique__tabs tabs">
+            <div data-tabs="boutique" class="tabs__controls">
+              <div class="container tabs__container">
+                <button class="button button--secondary tabs__controls-button boutique__controls-button tab--active">Les produits locaux</button>
+                <button class="button button--secondary tabs__controls-button boutique__controls-button">Tout pour la pelote</button>
+              </div>
+            </div>
+            <div data-tabs="boutique" class="tabs__pages">
+              <div class="tabs__page">
+                <div class="container">
+                  <div class="gtc-3 boutique__grid">@@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {})</div>
+                </div>
+              </div>
+              <div class="tabs__page">
+                <div class="container">
+                  <div class="gtc-3 boutique__grid">@@include("./tpls/cards/product-card.html", {})@@include("./tpls/cards/product-card.html", {})@@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {}) @@include("./tpls/cards/product-card.html", {})</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('./tpls/contacts-map.html', {})
+      </main>
+
+      @@include('tpls/footer.html',{})
+    </div>
+
+    @@include('tpls/modals.html', {})
+    <script src="./js/bundle.min.js"></script>
+  </body>
+</html>
