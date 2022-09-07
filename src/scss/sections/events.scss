@@ -25,12 +25,21 @@
   row-gap: 30px;
   column-gap: 30px;
   counter-reset: cards;
+  @media (max-width: 992px) {
+    display: block;
+  }
 }
 
 .events__gallery > .card {
   --padding-horizontal: 38px;
   grid-row: var(--grid-row-start) / var(--grid-row-end);
   counter-increment: card;
+  @media (max-width: 992px) {
+    margin-bottom: 14px;
+  }
+  @media (max-width: 576px) {
+    --padding-horizontal: 15px;
+  }
 }
 
 .events__gallery > .card:nth-of-type(6n + 6) {
@@ -56,24 +65,37 @@
 .events__gallery > .card--no-pic .card__title {
   font-size: 19px;
   line-height: 126%;
+  @media (max-width: 992px) {
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
 }
 .events__gallery > .card--no-pic .card__desc {
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 150%;
+  @media (min-width: 993px) {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 150%;
+  }
 }
 .events__gallery > .card--no-pic .card__pic {
   height: 280px;
+  @media (max-width: 992px) {
+    height: 150px;
+  }
 }
 .events__gallery > .card--no-pic .card__meta {
-  padding-right: 20px;
-  padding-bottom: 18px;
-  padding-left: 21px;
+  @media (min-width: 993px) {
+    padding-right: 20px;
+    padding-bottom: 18px;
+    padding-left: 21px;
+  }
 }
 .events__gallery > .card--no-pic .card__meta-bullet {
-  margin-bottom: 3px;
-  font-size: 13px;
-  line-height: 150%;
+  @media (min-width: 993px) {
+    margin-bottom: 3px;
+    font-size: 13px;
+    line-height: 150%;
+  }
 }
 
 .events__gallery > .card--no-pic .card__meta-bullet--time {
@@ -82,4 +104,7 @@
 
 .events-page {
   padding-bottom: 126px;
+  @media (max-width: 576px) {
+    padding-bottom: 62px;
+  }
 }
