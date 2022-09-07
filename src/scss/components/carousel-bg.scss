@@ -54,7 +54,7 @@
     bottom: unset;
     left: -3.4vw;
     justify-content: space-between;
-    max-width: 60.9%;
+    max-width: 60.8%;
     height: 38px;
     padding-right: 0;
     padding-left: 0;
@@ -62,6 +62,9 @@
     margin-left: auto;
     background: none;
     backdrop-filter: none;
+  }
+  @media (max-width: 576px) {
+    max-width: 48.8%;
   }
 }
 
@@ -71,7 +74,7 @@
     background: rgba(41, 49, 51, 0.8);
     border-color: rgba(255, 255, 255, 0.1);
     border-style: solid;
-    border-width: 1px 1px 1px 0px;
+    border-width: 1px 1px 1px 1px;
     backdrop-filter: blur(14px);
   }
 }
