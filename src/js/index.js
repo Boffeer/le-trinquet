@@ -40,6 +40,7 @@ if (document.querySelector(".carousel-bg")) {
       beforeInit: function () {
         if (this.el.dataset.slides) {
           this.params.slidesPerView = +this.el.dataset.slides;
+          this.params.breakpoints[1101].slidesPerView = +this.el.dataset.slides;
         }
       },
     },
