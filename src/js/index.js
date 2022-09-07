@@ -8,7 +8,6 @@ import "./libs/custom-select.min.js";
 import "./unstable/formich.js";
 import Swiper, { Navigation, Autoplay } from "swiper";
 import "./libs/lazyload.min.js";
-import "./unstable/tabs.js";
 import "./unstable/burger.js";
 
 var lazyLoadInstance = new LazyLoad();
@@ -16,6 +15,7 @@ var lazyLoadInstance = new LazyLoad();
 if (document.querySelector(".input--dropdown")) {
   customSelect(".input--dropdown .input__select");
 }
+import "./unstable/tabs.js";
 
 // #region carousels
 if (document.querySelector(".carousel-bg")) {

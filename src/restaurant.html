@@ -67,10 +67,21 @@
         <section class="menu">
           <div class="menu__tabs tabs">
             <div data-tabs="menu" class="tabs__controls">
-              <div class="container tabs__container">
-                <button class="button button--secondary tabs__controls-button tab--active">Menu ou plat du jour</button>
-                <button class="button button--secondary tabs__controls-button">Tapas</button>
-                <button class="button button--secondary tabs__controls-button">Le bar</button>
+              <div class="tabs__controls-mobile">
+                <label class="input input--dropdown">
+                  <select id="" class="input__select">
+                    <option value="0">Menu ou plat du jour</option>
+                    <option value="1">Tapas</option>
+                    <option value="2">Le bar</option>
+                  </select>
+                </label>
+              </div>
+              <div class="tabs__controls-desktop">
+                <div class="container tabs__container">
+                  <button class="button button--secondary tabs__controls-button tab--active">Menu ou plat du jour</button>
+                  <button class="button button--secondary tabs__controls-button">Tapas</button>
+                  <button class="button button--secondary tabs__controls-button">Le bar</button>
+                </div>
               </div>
             </div>
             <div data-tabs="menu" class="tabs__pages">

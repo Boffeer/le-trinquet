@@ -69,6 +69,11 @@
 .hero__person {
   margin-bottom: 27px;
 }
+.hero__person.person-link {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 .hero__desc {
   max-width: 520px;
   margin-bottom: 27px;

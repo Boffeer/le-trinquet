@@ -59,6 +59,38 @@ setTimeout(() => {
         }
       });
     });
+    if (tabsBar.querySelector(".input--dropdown")) {
+      const dropdownItems = tabsBar
+        .querySelector(".input--dropdown")
+        .querySelectorAll(".custom-select-option");
+      dropdownItems.forEach((dropdownItem) => {
+        dropdownItem.addEventListener("click", () => {
+          const tabIndex = dropdownItem.dataset.value;
+          const tabsPages = document.querySelector(
+            `.tabs__pages[data-tabs="${tabsBar.dataset.tabs}"]`
+          );
+          const pages = tabsPages.querySelectorAll(".tabs__page");
+          pages.forEach((page, index) => {
+            page.classList.remove("tab--active");
+            if (index == tabIndex) {
+              page.classList.add("tab--active");
+            }
+          });
+
+          tabsBar
+            .querySelectorAll(".tabs__controls-button")
+            .forEach((button, index) => {
+              button.classList.remove("tab--active");
+              if (index == tabIndex) {
+                button.classList.add("tab--active");
+              }
+            });
+
+          console.log(dropdownItem);
+          console.log(tabsBar.dataset);
+        });
+      });
+    }
 
     if (tabsBar.dataset.tabs) {
       tabBarButtons.forEach((tabButton) => {

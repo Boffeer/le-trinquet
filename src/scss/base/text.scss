@@ -30,7 +30,6 @@
 .quote {
   position: relative;
   display: block;
-  max-width: 360px;
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 18px;
@@ -40,6 +39,9 @@
   line-height: 150%;
   color: #f7f7f7;
   letter-spacing: 0.1em;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .quote::before,
@@ -58,7 +60,7 @@
   content: "“";
 }
 .quote::after {
-  right: 97px;
-  bottom: -42px;
+  right: 0;
+  bottom: -9px;
   content: "”";
 }

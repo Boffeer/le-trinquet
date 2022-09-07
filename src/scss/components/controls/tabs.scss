@@ -1,7 +1,23 @@
 .tabs__controls {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   background-color: #384043;
+}
+.tabs__controls-desktop {
+  width: 100%;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+.tabs__controls-mobile {
+  width: 100%;
+  max-width: 100%;
+  @media (min-width: 993px) {
+    display: none;
+  }
 }
 
 .tabs__controls-button {
