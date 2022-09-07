@@ -29,6 +29,9 @@
 // Section
 .person {
   padding-top: 105px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .person__info {
   position: relative;
@@ -37,7 +40,24 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.person__bio {
+  position: relative;
+}
+.person__bio::before {
+  position: absolute;
+  top: -5%;
+  left: -15%;
+  z-index: 1;
+  width: 130%;
+  height: 130%;
+  content: "";
+  background: #3d4346;
+  filter: blur(200px);
+  border-radius: 50%;
+}
 .person__post {
+  position: relative;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
@@ -70,6 +90,8 @@
 }
 
 .person__name {
+  position: relative;
+  z-index: 2;
   max-width: 370px;
   font-family: var(--ff-title);
   font-size: 62px;
@@ -78,12 +100,31 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+.person__quote {
+  position: relative;
+  z-index: 2;
+}
 
 .person__bullets {
+  position: relative;
   width: 100%;
   max-width: 433px;
 }
+.person__bullets::after {
+  position: absolute;
+  top: -5%;
+  left: -15%;
+  z-index: 1;
+  width: 130%;
+  height: 130%;
+  content: "";
+  background: #3d4346;
+  filter: blur(200px);
+  border-radius: 50%;
+}
 .person__bullet {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
