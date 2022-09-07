@@ -17,6 +17,11 @@
   display: block;
   width: 100%;
   font-family: var(--ff-regular);
+  @media (max-width: 768px) {
+    --padding: 13px 13px 13px 46px;
+    --fz: 15px;
+    --lh: 22px;
+  }
 }
 .input--active {
   --border-color: var(--c-text-grey-2);
@@ -58,6 +63,12 @@
   display: block;
   width: 18px;
   height: 18px;
+  @media (max-width: 768px) {
+    top: 18px;
+    left: 24px;
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .input__label {

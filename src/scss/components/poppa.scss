@@ -147,6 +147,9 @@
   color: transparent;
   background-color: var(--bg-poppa);
   border-radius: var(--radius-poppa);
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .poppa__title {
@@ -170,6 +173,10 @@
 .poppa__button {
   display: block;
   width: 100%;
+  @media (max-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
 }
 
 .poppa__closer::before,
@@ -180,4 +187,8 @@
   height: 8%;
   margin-right: auto;
   margin-left: auto;
+  @media (max-width: 768px) {
+    top: 46%;
+    width: 70%;
+  }
 }
