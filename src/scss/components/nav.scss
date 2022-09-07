@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  @media (max-width: $laptop) {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #2c353d;
+  }
 }
 
 .nav__item {
@@ -15,6 +19,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   border: 1px solid #2b333a;
+  @media (max-width: $laptop) {
+    border: none;
+  }
 }
 .nav__item::after {
   position: absolute;
@@ -30,11 +37,16 @@
   content: "";
   background-color: var(--c-accent);
   transition: all 0.3s ease;
+  @media (max-width: $laptop) {
+    display: none;
+  }
 }
 .nav__item--active {
   --color: var(--c-accent);
   position: relative;
-  font-weight: 600;
+  @media (min-width: calc($laptop + 1px)) {
+    font-weight: 600;
+  }
 }
 .nav__item--active::after {
   height: 100%;
@@ -56,4 +68,11 @@
   color: var(--color);
   letter-spacing: inherit;
   transition: all 0.3s ease;
+  @media (max-width: $laptop) {
+    padding-top: 16px;
+    padding-right: 21px;
+    padding-bottom: 16px;
+    padding-left: 21px;
+    text-align: left;
+  }
 }

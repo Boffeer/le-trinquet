@@ -9,6 +9,7 @@ import "./unstable/formich.js";
 import Swiper, { Navigation, Autoplay } from "swiper";
 import "./libs/lazyload.min.js";
 import "./unstable/tabs.js";
+import "./unstable/burger.js";
 
 var lazyLoadInstance = new LazyLoad();
 

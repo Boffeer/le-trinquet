@@ -2,6 +2,7 @@
 .burger {
   position: relative;
   right: 10px;
+  order: 10;
   width: 28px;
   height: 28px;
   transition: $tr;
@@ -33,13 +34,14 @@
   transform: translate(-50%, calc(-50% + 8px));
 }
 
-.burger .is-active span {
+.header--opened .burger span {
   &:nth-child(1) {
     transform: translate(-50%, -50%) rotate(45deg);
   }
 
   &:nth-child(2) {
-    width: 0;
+    transform: scaleX(0);
+    transform-origin: right;
   }
 
   &:nth-child(3) {
