@@ -2,18 +2,29 @@
   padding-top: 140px;
   padding-bottom: 101px;
   background: #2c2f30;
+  @media (max-width: 1200px) {
+    padding-top: 91px;
+    padding-bottom: 67px;
+  }
 }
 
 .pricing__title {
   margin-bottom: 60px;
+  @media (max-width: 1200px) {
+    margin-bottom: 34px;
+  }
 }
 .pricing__table {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 370px));
+  row-gap: 30px;
   column-gap: 30px;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 340px));
+  }
 }
 
 .pricing-card {
@@ -27,9 +38,17 @@
   padding-left: var(--padding-horizontal);
   background: #35383d;
   --padding-horizontal: 31px;
+  @media (max-width: 576px) {
+    --padding-horizontal: 21px;
+    padding-top: 20px;
+    padding-bottom: 43px;
+  }
 }
 .pricing-card__content {
   margin-bottom: 16px;
+  @media (max-width: 576px) {
+    margin-bottom: 11px;
+  }
 }
 .pricing-card__title {
   display: flex;
@@ -44,6 +63,10 @@
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  @media (max-width: 576px) {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
 }
 
 .pricing-card__title-icon {
@@ -60,6 +83,9 @@
   line-height: 150%;
   color: #ffffff;
   letter-spacing: 0.1em;
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
 }
 .pricing-card__list {
   width: calc(100% + var(--padding-horizontal) * 2);
@@ -74,6 +100,10 @@
   padding-bottom: 18px;
   padding-left: var(--padding-horizontal);
   border-bottom: 1px solid #4c4f55;
+  @media (max-width: 576px) {
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
 }
 .pricing-card__price:last-of-type {
   border-bottom: none;
@@ -84,6 +114,9 @@
   font-weight: 400;
   line-height: 100%;
   color: #ffffff;
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
 }
 .pricing-card__price-desc {
   font-size: 14px;
@@ -91,6 +124,9 @@
   line-height: 100%;
   color: #ffffff;
   opacity: 0.5;
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
 }
 
 .pricing-card__price-meta {
@@ -103,11 +139,17 @@
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  @media (max-width: 576px) {
+    font-size: 17px;
+  }
 }
 
 .pricing-card__price-meta-value {
   font-size: 15px;
   line-height: 126.5%;
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
 }
 
 .pricing__button {

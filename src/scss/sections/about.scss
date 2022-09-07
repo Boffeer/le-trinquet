@@ -18,12 +18,26 @@
     margin-bottom: 8px;
   }
 }
+.about__pic:last-child {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 .about__img {
   object-fit: cover;
 }
 
 .about__gallery {
   margin-bottom: 106px;
+  @media (max-width: 1200px) {
+    margin-bottom: 53px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 24px;
+  }
 }
 @media (max-width: 576px) {
   .about__container .table-bullets__bullet:nth-child(4) {
@@ -42,6 +56,9 @@
 }
 .pelote__table-bullets {
   margin-bottom: 50px;
+  @media (max-width: 768px) {
+    margin-bottom: 31px;
+  }
 }
 .pelote__button {
   width: 100%;
