@@ -19,6 +19,10 @@
     display: none;
   }
 }
+.tabs__pages {
+  position: relative;
+  z-index: 1;
+}
 
 .tabs__controls-button {
   --button-color: #546065;

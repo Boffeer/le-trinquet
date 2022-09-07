@@ -47,9 +47,19 @@
         <section class="boutique">
           <div class="boutique__tabs tabs">
             <div data-tabs="boutique" class="tabs__controls">
-              <div class="container tabs__container">
-                <button class="button button--secondary tabs__controls-button boutique__controls-button tab--active">Les produits locaux</button>
-                <button class="button button--secondary tabs__controls-button boutique__controls-button">Tout pour la pelote</button>
+              <div class="tabs__controls-mobile">
+                <label class="input input--dropdown">
+                  <select id="" class="input__select">
+                    <option value="0">Les produits locaux</option>
+                    <option value="1">Tout pour la pelote</option>
+                  </select>
+                </label>
+              </div>
+              <div class="tabs__controls-desktop">
+                <div class="container tabs__container">
+                  <button class="button button--secondary tabs__controls-button boutique__controls-button tab--active">Les produits locaux</button>
+                  <button class="button button--secondary tabs__controls-button boutique__controls-button">Tout pour la pelote</button>
+                </div>
               </div>
             </div>
             <div data-tabs="boutique" class="tabs__pages">
