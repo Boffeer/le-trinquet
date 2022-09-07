@@ -1,13 +1,22 @@
 .about {
   padding-bottom: 103px;
+  @media (max-width: 1100px) {
+    padding-bottom: 48px;
+  }
 }
 .about__running-string {
   margin-bottom: 100px;
+  @media (max-width: 1100px) {
+    margin-bottom: 35px;
+  }
 }
-.aobut__pic {
+.about__pic {
   display: block;
   width: 100%;
   height: auto;
+  @media (max-width: 768px) {
+    margin-bottom: 8px;
+  }
 }
 .about__img {
   object-fit: cover;
@@ -15,6 +24,17 @@
 
 .about__gallery {
   margin-bottom: 106px;
+}
+@media (max-width: 576px) {
+  .about__container .table-bullets__bullet:nth-child(4) {
+    order: 5;
+  }
+  .about__container .table-bullets__bullet:nth-child(5) {
+    order: 4;
+  }
+  .about__container .table-bullets__bullet:nth-child(6) {
+    order: 6;
+  }
 }
 
 .pelote {

@@ -3,8 +3,11 @@
   display: flex;
   justify-content: flex-start;
   height: 100%;
-  min-height: 831px;
-  padding-top: 108px;
+  padding-top: 258px;
+  @media (min-width: 1101px) {
+    min-height: 831px;
+    padding-top: 108px;
+  }
 }
 .hero__container {
   position: relative;
@@ -12,6 +15,10 @@
   width: 100%;
   margin-top: auto;
   pointer-events: none;
+  @media (max-width: 1100px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero__offer {
@@ -24,11 +31,31 @@
   pointer-events: initial;
   background: rgba(41, 49, 51, 0.8);
   backdrop-filter: blur(14px);
+  @media (max-width: 1200px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 992px) {
+    width: 100%;
+    max-width: 100%;
+  }
+  @media (max-width: 576px) {
+    padding-top: 31px;
+    padding-right: 21px;
+    padding-bottom: 34px;
+    padding-left: 25px;
+  }
 }
 
 .hero__title {
   max-width: 570px;
   margin-bottom: 32px;
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
 }
 
 .hero__button {
@@ -47,15 +74,29 @@
   margin-bottom: 27px;
 }
 
-.hero__buttons {
+.hero__vertical-buttons {
   max-width: 370px;
 }
 .hero__buttons > .button {
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+.hero__vertical-buttons > .button {
   width: 100%;
   max-width: 100%;
   margin-right: 0;
   margin-bottom: 16px;
 }
-.hero__buttons > .button:last-child {
+.hero__buttons > .button:last-child,
+.hero__vertical-buttons > .button:last-child {
   margin-bottom: 0;
+}
+.hero__buttons {
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }

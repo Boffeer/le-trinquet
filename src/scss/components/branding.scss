@@ -22,6 +22,9 @@
   content: "";
   background: #f7f7f7;
   opacity: 0.3;
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
 .branding__slogan {

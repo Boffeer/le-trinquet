@@ -1,9 +1,16 @@
 .events {
   padding-top: 100px;
   background-color: #212326;
+  @media (max-width: 1100px) {
+    padding-top: 60px;
+    padding-bottom: 36px;
+  }
 }
 .events__title {
   margin-bottom: 67px;
+  @media (max-width: 1100px) {
+    margin-bottom: 27px;
+  }
 }
 .events__carousel {
   width: 100%;

@@ -20,7 +20,7 @@ if (document.querySelector(".input--dropdown")) {
 if (document.querySelector(".carousel-bg")) {
   let carouselBg = new Swiper(".carousel-bg", {
     modules: [Navigation, Autoplay],
-    slidesPerView: 4,
+    slidesPerView: 3,
     grabCursor: true,
     loop: true,
     autoplay: {
@@ -30,19 +30,29 @@ if (document.querySelector(".carousel-bg")) {
       nextEl: ".carousel-bg__button-next",
       prevEl: ".carousel-bg__button-prev",
     },
+    breakpoints: {
+      1101: {
+        slidesPerView: 4,
+      },
+    },
     on: {
       beforeInit: function () {
         if (this.el.dataset.slides) {
           this.params.slidesPerView = +this.el.dataset.slides;
         }
-        console.log(this);
       },
     },
   });
   function highlightCurrentSlide(swiper) {
     const totalSlides = [...swiper.el.querySelectorAll(".swiper-slide")];
-    const currentSlide =
-      totalSlides[swiper.activeIndex + swiper.params.slidesPerView / 2];
+
+    let activeModifier = swiper.params.slidesPerView / 2;
+    if (window.innerWidth <= 1100) {
+      activeModifier = swiper.params.slidesPerView - 2;
+    }
+
+    const currentSlide = totalSlides[swiper.activeIndex + activeModifier];
+
     totalSlides.forEach((slide) => {
       if (slide == currentSlide) {
         slide.classList.add("carousel-bg__slide--active");
@@ -60,10 +70,16 @@ if (document.querySelector(".carousel-bg")) {
 if (document.querySelector(".carousel")) {
   let carousel = new Swiper(".carousel", {
     modules: [Navigation, Autoplay],
-    slidesPerView: 2,
-    spaceBetween: 32,
+    slidesPerView: "auto",
+    spaceBetween: 20,
     grabCursor: true,
     loop: true,
+    breakpoints: {
+      993: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+    },
     navigation: {
       nextEl: ".carousel__button-next",
       prevEl: ".carousel__button-prev",

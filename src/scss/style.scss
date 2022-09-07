@@ -69,20 +69,22 @@ body {
     max-width: $max-width-container;
     margin: 0 auto;
   }
-  @if ($container-padding > 0) {
-    padding: 0 var(--container-padding);
-  }
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+  // @if ($container-padding > 0) {
+  //   padding: 0 var(--container-padding);
+  // }
 
   @media (max-width: $tablet) {
-    --container-padding: 30px;
+    // --container-padding: 30px;
   }
 
   @media (max-width: $mobile-l) {
-    --container-padding: 20px;
+    // --container-padding: 20px;
   }
 
   @media (max-width: $mobile-m) {
-    --container-padding: 16px;
+    // --container-padding: 16px;
   }
 }
 

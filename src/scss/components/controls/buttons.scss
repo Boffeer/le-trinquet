@@ -19,6 +19,10 @@
   cursor: pointer;
   border: 1px solid var(--button-color);
   transition: all 0.3s ease;
+  @media (max-width: 768px) {
+    padding-top: 20px;
+    padding-top: 21px;
+  }
 }
 
 .button[disabled] {
