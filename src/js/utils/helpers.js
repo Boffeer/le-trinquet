@@ -17,7 +17,7 @@ document.body.classList.add("os-" + os);
  * @param string pass string to clipboard
  */
 // eslint-disable-next-line no-unused-vars
-function copyToClipboard(text) {
+export function copyToClipboard(text) {
   if (!text) return;
 
   var clipboardStorage = document.createElement("input");
