@@ -89,6 +89,19 @@ function validateEmail(input) {
 }
 // #endregion validate
 
+const buttonClasses = {
+  disabled: "button--disabled",
+};
+function disableButton(button) {
+  if (!button.innerText) return;
+  button.classList.add(buttonClasses.disabled);
+  button.disabled = true;
+}
+function enableButton(button) {
+  if (!button.innerText) return;
+  button.classList.remove(buttonClasses.disabled);
+  button.disabled = false;
+}
 // Обработчик форм
 const formsList = document.querySelectorAll("form");
 formsList.forEach((form) => {
@@ -109,13 +122,26 @@ formsList.forEach((form) => {
         "Content-Type": "application/x-www-form-urlencoded",
       },
     });
-    try {
-      let result = await response.json();
-      console.log(result);
-      console.log("thanks");
-    } catch {
-      console.log("error");
+    // try {
+    // let result = await response.json();
+    // console.log(result);
+    console.log(form);
+    console.log("thanks");
+    const submitButton = form.querySelector('button[type="submit"]');
+    if (submitButton) {
+      submitButton.dataset.buttonText = submitButton.innerHTML;
+      // submitButton.innerText = "Message envoyé"
+      submitButton.innerHTML = "✓";
+      disableButton(submitButton);
+
+      setTimeout(() => {
+        submitButton.innerHTML = submitButton.dataset.buttonText;
+        enableButton(submitButton);
+      }, 10000);
     }
+    // } catch {
+    // console.log("error");
+    // }
   });
 });
 
@@ -162,8 +188,8 @@ function initInputs(inputs) {
     field.addEventListener("blur", () => {
       deactivateInput(input);
     });
-    if (field.type != "email" || field.type != "tel") {
-      field.addEventListener("input", () => {
+    if (field.type != "email" && field.type != "tel") {
+      field.addEventListener("input", (e) => {
         validateInput(input);
       });
     }
@@ -171,16 +197,7 @@ function initInputs(inputs) {
     if (field.value !== "") {
       input.classList.add(inputClasses.active);
     }
-    // activateDropdown(input);
   });
-}
-
-function closeDropdowns() {
-  const dropdowns = document.querySelectorAll(".input--dropdown");
-  dropdowns.forEach((item) => {
-    deactivateInput(item);
-  });
-  window.removeEventListener("click", closeDropdowns);
 }
 
 initInputs(inputs);

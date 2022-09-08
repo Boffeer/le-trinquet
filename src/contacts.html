@@ -36,7 +36,9 @@
             <form action="mail.php" class="form contacts__form">
               <div class="contacts__form-grid">
                 @@include('./tpls/inputs/name.html', {}) @@include('./tpls/inputs/tel.html', {}) @@include('./tpls/inputs/email.html', {}) @@include('./tpls/inputs/textarea.html', {})
-                <button class="button button--primary contacts__form-submit">Envoyer le message</button>
+                <button type="submit" class="button button--primary contacts__form-submit">
+                  <span class="button__text">Envoyer le message</span>
+                </button>
               </div>
             </form>
             <div class="contacts__map contacts-page__map">
