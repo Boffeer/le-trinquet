@@ -76,6 +76,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: all 0.3s ease;
+}
+.js_lazy-init.big-card__media::before {
+  opacity: 0;
 }
 .big-card__pic {
   position: absolute;
@@ -102,6 +106,7 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+  background-color: #000;
 }
 
 .pelote-loyalty__icon {
