@@ -21,14 +21,29 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
 }
 .snack__hl {
   color: var(--c-text-on);
 }
 
+.snack__buttons {
+  @media (max-width: 576px) {
+    max-width: 100%;
+    padding-top: 14px;
+  }
+}
 .snack__button {
   min-width: 172px;
   padding-top: 19px;
   padding-bottom: 22px;
   font-size: 15px;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
