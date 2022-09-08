@@ -184,9 +184,13 @@ function initInputs(inputs) {
 
     field.addEventListener("focus", () => {
       activateInput(input);
+      setInputValid(input);
     });
     field.addEventListener("blur", () => {
       deactivateInput(input);
+      if (field.value != "") {
+        validateInput(input);
+      }
     });
     if (field.type != "email" && field.type != "tel") {
       field.addEventListener("input", (e) => {

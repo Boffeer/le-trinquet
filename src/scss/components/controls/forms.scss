@@ -12,6 +12,11 @@
   row-gap: var(--form-row-gap);
   column-gap: var(--form-column-gap);
 }
+.form__hidden {
+  display: none;
+  appearance: none;
+  visibility: hidden;
+}
 
 .form__title {
   width: 100%;

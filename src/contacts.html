@@ -33,7 +33,12 @@
                 <button class="button button--secondary contacts__button-ball" data-poppa-open="callback-ball">Réserver une partie</button>
               </div>
             </div>
-            <form action="mail.php" class="form contacts__form">
+            <form action="mail.php" class="form contacts__form form--contacts">
+              <div class="form__hidden">
+                <input type="text" name="page" hidden />
+                <input type="text" name="formname" hidden />
+                <input type="text" name="additional" hidden />
+              </div>
               <div class="contacts__form-grid">
                 @@include('./tpls/inputs/name.html', {}) @@include('./tpls/inputs/tel.html', {}) @@include('./tpls/inputs/email.html', {}) @@include('./tpls/inputs/textarea.html', {})
                 <button type="submit" class="button button--primary contacts__form-submit">
