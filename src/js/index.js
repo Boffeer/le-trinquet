@@ -126,6 +126,8 @@ function loadMap(mapContainer) {
     const placeholder = mapContainer.querySelector(`.${preview}`);
     const map = mapContainer.querySelector(`.${content}`);
 
+    map.src = map.dataset.src;
+
     mapContainer.classList.add(init);
   }
 }
@@ -140,6 +142,10 @@ window.addEventListener("scroll", () => {
   }
 });
 // #endregion lazymap
+
+// #region lazyYT
+// #endregion lazyYT
+
 // Аккордеон
 // const accordions = new DismalModules.Accordions()
 
