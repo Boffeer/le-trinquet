@@ -139,6 +139,11 @@ formsList.forEach((form) => {
         enableButton(submitButton);
       }, 10000);
     }
+    const sentEvent = new Event("form_sent", {
+      bubbles: true,
+      cancelable: false,
+    });
+    form.dispatchEvent(sentEvent);
     // } catch {
     // console.log("error");
     // }
