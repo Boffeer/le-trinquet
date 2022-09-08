@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./css/style.min.css?_v=20220908124829" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container header__container header__container--mobile">
+    <a href="#" class="branding header__branding">
+      <div class="branding__name">Le Trinquet</div>
+    </a>
+    <div class="socials header__socials">
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/instagram.svg#instagram"></use>
+    </svg>
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/facebook.svg#facebook"></use>
+    </svg>
+  </a>
+</div>
+
+    <button class="burger"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+  </div>
+  <div class="container header__container header__container--desktop">
+    <div class="header__inner">
+      <a href="#" class="branding header__branding">
+        <div class="branding__name">Le Trinquet</div>
+        <span class="branding__slogan"
+          >Un certain art de vivre: <br />
+          Jouer, Manger, Se retrouver
+        </span>
+      </a>
+      <div class="hints header__hints">
+  <a href="https://goo.gl/maps/itbKVgLkKr3Gv62h9" target="_blank" rel="noopener noreferrer" class="hints__item hints__item--geo">
+    <svg class="hints__item-icon">
+      <use xlink:href="./img/icons/geo.svg#geo"></use>
+    </svg>
+    <span class="hints__item-text"
+      >Le Trinquet, 19 Avenue du Centre, <br />
+      40150 Soorts-Hossegor</span
+    >
+  </a>
+  <a href="#" class="hints__item hints__item--time">
+    <svg class="hints__item-icon">
+      <use xlink:href="./img/icons/time.svg#time"></use>
+    </svg>
+    <span class="hints__item-text">09:00 – 23:30</span>
+  </a>
+  <a href="#" class="hints__item hints__item--tel js_click-copy">
+    <svg class="hints__item-icon">
+      <use xlink:href="./img/icons/tel.svg#tel"></use>
+    </svg>
+    <span class="hints__item-text">05 58 70 91 54</span>
+  </a>
+</div>
+ <div class="socials header__socials">
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/instagram.svg#instagram"></use>
+    </svg>
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/facebook.svg#facebook"></use>
+    </svg>
+  </a>
+</div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a href="#" class="nav__link">Page Principale</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Restaurant</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Pelote</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Événements</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Boutique</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="contacts contacts-page">
+          <div class="container contacts__container contacts-page__container">
+            <div class="contacts__info contacts-page__info">
+              <h2 class="contacts__title section-title">Le Trinquet</h2>
+              <p class="contacts__desc section-desc">Contactez-nous via nos réseaux ou directement par téléphone ou mail</p>
+              <div class="contacts__links flex">
+                <div class="socials contacts__socials">
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/instagram-accent.svg#instagram-accent"></use>
+    </svg>
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/facebook-accent.svg#facebook-accent"></use>
+    </svg>
+  </a>
+</div>
+
+                <div class="hints contacts__hints">
+                  <a href="#" class="hints__item hints__item--tel js_click-copy">
+                    <svg class="hints__item-icon">
+                      <use xlink:href="./img/icons/tel.svg#tel"></use>
+                    </svg>
+                    <span class="hints__item-text">05 58 70 91 54</span>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex--column contacts__buttons">
+                <button class="button button--primary contacts__button-table" data-poppa-open="callback-table">Réserver une table</button>
+                <button class="button button--secondary contacts__button-ball" data-poppa-open="callback-ball">Réserver une partie</button>
+              </div>
+            </div>
+            <form action="mail.php" class="form contacts__form form--contacts">
+              <div class="form__hidden">
+                <input type="text" name="page" hidden />
+                <input type="text" name="formname" hidden />
+                <input type="text" name="additional" hidden />
+              </div>
+              <div class="contacts__form-grid">
+                <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--email">
+  <input
+    class="input__field"
+    name="user_email"
+    type="email"
+    placeholder="E-mail"
+    autocorrect="off"
+    autocomplete="email"
+    data-value-missing="Напишите имейл"
+    data-value-invalid="Проверьте корректность имейла"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-email.svg#email"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--textarea">
+  <textarea class="input__field" placeholder="Votre Message"></textarea>
+</label>
+
+                <button type="submit" class="button button--primary contacts__form-submit">
+                  <span class="button__text">Envoyer le message</span>
+                </button>
+              </div>
+            </form>
+            <div class="contacts-map contacts-page__map">
+              <img class="contacts-map__preview js_lazy__preview" src="./img/contact/map.jpg" alt="" />
+              <iframe class="contacts-map__frame js_lazy__content" data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d214.5195643835964!2d-1.3951768151776704!3d43.66439993527714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x446578237b8fe0ca!2sLe%20Trinquet!5e0!3m2!1sru!2sby!4v1662621649656!5m2!1sru!2sby" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__organization">
+      <a href="#" class="branding footer__branding">
+        <div class="branding__name">Le Trinquet</div>
+        <span class="branding__slogan"
+          >Un certain art de vivre: <br />
+          Jouer, Manger, Se retrouver
+        </span>
+      </a>
+      <div class="socials @@className">
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/instagram.svg#instagram"></use>
+    </svg>
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link">
+    <svg class="socials__icon">
+      <use xlink:href="./img/icons/facebook.svg#facebook"></use>
+    </svg>
+  </a>
+</div>
+
+    </div>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Restaurant </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link"> Pelote </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Événements</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Boutique </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hints footer__hints">
+      <a href="#" class="hints__item hints__item--time">
+        <svg class="hints__item-icon">
+          <use xlink:href="./img/icons/time.svg#time"></use>
+        </svg>
+        <span class="hints__item-text">09:00 – 23:30</span>
+      </a>
+      <a href="#" class="hints__item hints__item--geo">
+        <svg class="hints__item-icon">
+          <use xlink:href="./img/icons/geo.svg#geo"></use>
+        </svg>
+        <span class="hints__item-text"
+          >Le Trinquet, 19 Avenue du Centre, <br />
+          40150 Soorts-Hossegor</span
+        >
+      </a>
+      <a href="#" class="hints__item hints__item--tel js_click-copy">
+        <svg class="hints__item-icon">
+          <use xlink:href="./img/icons/tel.svg#tel"></use>
+        </svg>
+        <span class="hints__item-text">05 58 70 91 54</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <div id="callback-table" class="poppa">
+  <h3 class="poppa__title">
+    Laissez vos coordonnées <br />
+    ou appeler au numéro <br />
+    <a class="link poppa__title-link" href="tel:0558709154">05 58 70 91 54</a>
+  </h3>
+  <form action="table" id="form-table" class="form form--table">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <div class="form__inner">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <button type="submit" class="button button--primary poppa__button" data-success="Message envoyé">
+        <span class="button__text">Envoyer le message</span>
+      </button>
+    </div>
+  </form>
+</div>
+ <div id="callback-ball" class="poppa">
+  <h3 class="poppa__title">
+    Laissez vos coordonnées <br />
+    ou appeler au numéro <br />
+    <a class="link poppa__title-link" href="tel:0558709154">05 58 70 91 54</a>
+  </h3>
+  <form action="table" id="form-ball" class="form form--ball">
+    <div class="form__hidden">
+      <input type="text" name="page" hidden />
+      <input type="text" name="formname" hidden />
+      <input type="text" name="additional" hidden />
+    </div>
+    <div class="form__inner">
+      <label class="input input--name">
+  <input
+    class="input__field"
+    name="user_name"
+    type="text"
+    placeholder="Nom"
+    data-value-missing="Заполните имя"
+    data-value-invalid="Что-то не так с введенным именем"
+    autocomplete="name"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-user.svg#user"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+ <label class="input input--tel">
+  <input
+    class="input__field"
+    required
+    name="user_tel"
+    type="tel"
+    placeholder="Objet"
+    maxlength="25"
+    minlength="10"
+    data-value-missing="Напишите телефон"
+    data-value-invalid="Проверьте корректность телефона"
+    autocomplete="tel"
+  />
+  <svg class="input__icon">
+    <use xlink:href="./img/icons/form-tel.svg#tel"></use>
+  </svg>
+  <span class="input__message">Ошибка</span>
+</label>
+
+      <button type="submit" class="button button--primary poppa__button" data-success="Message envoyé">
+        <span class="button__text">Envoyer le message</span>
+      </button>
+    </div>
+  </form>
+</div>
+
+
+<div class="snack" id="snack-cookies">
+  <div class="container gtc-2 snack__container">
+    <div class="snack__info">
+      <span class="snack__hl">Our Site Uses Cookies</span>
+      By clicking Agree, you agree to our
+      <a href="#" class="link link--inline">terms of service</a>,
+      <a href="#" class="link link--inline">privacy policy</a>
+      and
+      <a href="#" class="link link--inline">cookies policy</a>
+    </div>
+    <div class="snack__buttons flex">
+      <button class="snack__button button button--primary">Agree</button>
+    </div>
+  </div>
+</div>
+
+    <script src="./js/bundle.min.js?_v=20220908124829"></script>
+  </body>
+</html>
